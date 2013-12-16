@@ -69,8 +69,8 @@ body{
 
 /* Traject top */
 
-.traject-description{
-    padding: 0px 15px 0 15px;
+.traject-description {
+    padding: 0 2em;
     text-transform: uppercase;
     background: #53bbb4;
     color:#fff;
@@ -79,8 +79,36 @@ body{
 
 .traject-description h1{
     font-weight: normal;
+    font-size: 1.25em;
     margin: 0;
 }
+
+.traject-description h2{
+    font-weight: normal;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+.traject-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Traject individual */
+
+.traject-short {}
+.time-start {}
+.time-end {}
+.transport {}
+.box-left {}
+.time-added {}
+.time-arrival {}
+.box-right {}
+.traject li {
+    list-style: none;
+}
+li.traject div {}
 
 /* Iconsprite-pt */
 

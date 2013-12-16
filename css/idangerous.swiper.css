@@ -56,7 +56,7 @@ Basic Swiper Styles
 	transition-duration:0s;
 	transform:translate3d(0px,0,0);
 	transition-timing-function:ease;
-	margin-top: 64px;
+	margin-top: 4em;
 }
 .swiper-free-mode > .swiper-wrapper {
 	-webkit-transition-timing-function: ease-out;
@@ -89,6 +89,7 @@ sizes, pagination, etc.
 	height: 100px;*/
 }
 .swiper-slide {
+    width: 100%;
 	/* Specify Slides's Size: */
 	
 	/*width: 100%;
