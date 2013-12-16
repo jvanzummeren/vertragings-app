@@ -1,0 +1,355 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    font-family: Arial;
+    margin:0; padding:0;
+    font-family:"akzidenz", "sans-serif";
+}
+
+@font-face {
+    font-family: "Akzidenz";
+    src: url(fonts/AkzidenzGroteskBE-Light.otf) format("truetype");
+}
+
+/* Navigation bar (top)*/
+
+.navigation-bar{
+    height:44px;
+    padding: 22px 0 0px 0;
+    background-color:#1f2c35;
+    font-size:17px;
+    text-align:center;
+    color:#FFFFFF;
+    position:fixed; 
+    z-index:2;
+    top:0;
+    left:0;
+    right:0;
+    line-height:44px;
+    opacity: 1;    
+    text-transform: uppercase;
+}
+
+.navigation-bar h1{
+    font-weight:normal; 
+    margin: 0;
+    font-size: 1.3em;
+    width: 70%;
+    float: left;
+    line-height: 1.7;
+}
+
+.navigation-bar span.menu-button {
+    display: block;
+    width: 15%;
+    padding: 0;
+}
+
+.navigation-bar .settings{
+    float: left;
+}
+
+.navigation-bar .add{
+    float: left;
+}
+
+.swiper-container {
+    z-index:1;
+    padding: 30px 0 48px 0;
+    width:100%;
+    font-size: 1.0em;
+}
+
+.swiper-slide {
+    z-index:1;
+    padding:0;
+    -webkit-overflow-scrolling:touch;
+    overflow:auto;
+}
+
+.traject-description{
+    padding: 45px 15px 5px 15px;
+    text-transform: uppercase;
+    background: #53bbb4;
+    color:#fff;
+    line-height: 32px;
+}
+
+.traject-description h1{
+    font-weight: normal;
+    font-size: 16px;
+    margin:0;padding: 0;
+}
+
+ul.traject{
+    list-style: none;;
+    padding:0;
+    margin: 0;
+    color: #6a6968;
+}
+
+ul.traject li{
+    width: 100%;
+    float:left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.traject li:nth-child(even){
+    background-color:#f8f3ee;
+}
+
+ul.traject .schedule { 
+    margin-left: 15px;
+    float: left;
+    width:35%;
+}
+
+ul.traject i{
+    float:left;
+}
+ul.traject .transport p{
+    font-size: 12px;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+ul.traject .transport{
+   width:50px;
+    display: inline-block;
+    position: relative;
+}
+
+ul.traject .time { 
+    float:right;
+    margin-right:15px;
+    text-transform: uppercase;
+}
+
+.schedule span {
+    float:left;
+}
+
+li.opened .iconsprite--arrow {}
+
+.transport-time {}
+
+.transport-description {}
+
+.information {
+    display:none;
+}
+
+.transport-ontime {}
+
+.transport-number {}
+/*
+li[opened="opened"] .transports {
+    width:80%;
+}*/
+
+li[opened="opened"] .transport-time {}
+
+li[opened="opened"] .transport-description {
+    float: right;
+}
+
+li[opened="opened"] .transport-ontime {}
+
+li[opened="opened"] .transport-number {
+    float: right;
+}
+
+.transport p span {
+    display: inline-block;
+}
+
+.late {
+    color:#d36f6d;
+}
+
+.transports{
+    position: relative;
+    float:left;
+    width:170px;
+}
+
+.transport {
+    /* width: 80%; */
+}
+
+.transport p{
+    width:170px;
+    float:left;
+    margin:0;
+}
+
+/* Add traject */
+
+.addtraject {
+    position:absolute;
+    background-color:#000;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2;
+    display:none;
+}
+
+.editsettings {
+    position:absolute;
+    background-color:#50bcb5;
+    top: 16px;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2;
+    display:none;
+}
+img.closesettings {
+    max-width:100%;
+}
+
+/* Animations */
+@keyframes rotate{
+0% {
+      transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+   }
+}
+100%{
+/*transform*/
+-webkit-transform:rotate(90deg);
+   -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+        transform:rotate(90deg);
+}
+
+li[opened="opened"] .iconsprite--arrow {
+/*transition*/
+-webkit-transition:All 0.5s ease;
+   -moz-transition:All 0.5s ease;
+     -o-transition:All 0.5s ease;
+        transition:All 0.5s ease;
+/*transform*/
+-webkit-transform:rotate(90deg);
+   -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+        transform:rotate(90deg);
+        margin-left: 14px;
+}
+
+
+
+/* Iconsprite-pt */
+
+.iconsprite-pt {
+    width:30px;
+    height:17px;
+}
+
+.iconsprite--train {
+    background-position: 0 0;
+}
+
+.iconsprite--bus {
+    background-position: 0px -17px;
+}
+
+.iconsprite--subway {
+    background-position: 0 -35px;
+}
+
+.sprite--late {
+    background-image: url(../img/sprites/iconsprite-pt-late.png);
+}
+
+.sprite--ontime {
+    background-image: url(../img/sprites/iconsprite-pt-ontime.png);
+}
+
+/* Menusprite */
+.menusprite {
+    display:inline-block;
+    background-image: url(../img/sprites/iconsprite-menu.png);
+    width:20px;
+    height:20px;
+}
+
+.menusprite--settings {
+    background-position:0 0;
+}
+.menusprite--add {
+    background-position: -20px 0px;
+}
+
+/* Iconsprite */
+.iconsprite {
+    display:inline-block;
+    background-image: url(../img/sprites/iconsprite.png);
+}
+
+.iconsprite--arrow {
+    background-position:0 0;
+    width: 15px;
+    height: 10px;
+    margin: 0.3em;
+    /*transition*/
+    -webkit-transition:All 0.2s ease;
+       -moz-transition:All 0.2s ease;
+         -o-transition:All 0.2s ease;
+            transition:All 0.2s ease;
+    /*transform*/
+    -webkit-transform:rotate(0deg);
+       -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+         -o-transform:rotate(0deg);
+            transform:rotate(0deg);
+    }
+}
+
+/* Sprites high-res */
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { 
+    .sprite--late {
+        background-image: url(../img/sprites/iconsprite-pt-late@2x.png);
+        background-size:34px 60px;
+    }
+
+    .sprite--ontime {
+        background-image: url(../img/sprites/iconsprite-pt-ontime@2x.png);
+        background-size:34px 60px;
+    }
+
+     .iconsprite--bus {
+        background-position:0 -140px;
+    }
+
+    .iconsprite--subway {
+        background-position:0 -280px;
+    }
+
+    .menusprite {
+        background-image: url(../img/sprites/iconsprite-menu@2x.png);
+        background-size:40px 20px;
+    }
+
+    .iconsprite--arrow {
+        background-position:0 0;
+        /*transition*/
+        -webkit-transition:All 0.2s ease;
+           -moz-transition:All 0.2s ease;
+             -o-transition:All 0.2s ease;
+                transition:All 0.2s ease;
+        /*transform*/
+        -webkit-transform:rotate(0deg);
+           -moz-transform:rotate(0deg);
+            -ms-transform:rotate(0deg);
+             -o-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+}
