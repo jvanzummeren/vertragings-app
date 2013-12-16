@@ -96,19 +96,38 @@ body{
 }
 
 /* Traject individual */
+li.traject > div {
+    width: 100%;
+    height: 5.125em;
+}
 
-.traject-short {}
+li.traject .traject-short {
+    background-color: red;
+    height: 2.75em;
+}
 .time-start {}
 .time-end {}
-.transport {}
-.box-left {}
+.transport {
+    background-color: blue;
+}
+.box-left {
+    background-color: green;
+    width: 26.2%;
+}
 .time-added {}
 .time-arrival {}
-.box-right {}
+.box-right {
+    background-color: aliceblue;
+    width: 73.8%;
+}
 .traject li {
     list-style: none;
 }
-li.traject div {}
+
+.transport > div {
+    height: 100%;
+    float: left;
+}
 
 /* Iconsprite-pt */
 
