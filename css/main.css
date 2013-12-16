@@ -169,3 +169,39 @@ body{
 }
 
 /* Hier doet Jim dingen typen */
+.plaatsnaam-van label{
+    display: inline-block;
+    width:12%;
+}
+
+.plaatsnaam-van input{
+    display: inline-block;
+    width:52%;
+}
+
+.plaatsnaam-van a{
+    display: block;
+    float:right;
+    width:18%;
+    padding:0 2%;
+    margin-left:2%;
+    margin-right:2%;
+    background:#000;
+    color:#fff;
+    text-decoration: none;
+}
+
+.ui-menu .ui-menu-item a{ 
+    border-radius: 0; 
+    height:44px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 44px;
+}
+
+.ui-menu-item .ui-state-focus{ 
+    background: #419691; 
+    color:#fff; 
+}
+
+
