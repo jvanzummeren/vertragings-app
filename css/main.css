@@ -197,17 +197,48 @@ li.traject div {}
 }
 
 /* Hier doet Jim dingen typen */
-.plaatsnaam-van label{
-    display: inline-block;
-    width:12%;
+/* Traject toevoegen */
+body{
+    background:#51bcb5;
+}
+.traject-toevoegen{
+    padding-top:64px;
+    height:100%;
+    
+}
+.plaatsnaam{
+    background:#f2ecec;
+    padding-top:10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    margin-top: 20px;
+    width:100%;
 }
 
-.plaatsnaam-van input{
+.plaatsnaam-naar{
+    top:200px;
+}
+
+.plaatsnaam label{
+    display: inline-block;
+    width:10%;
+    margin-left:2%;
+    margin-right:2%;
+
+    font-size: 20px;
+}
+
+.plaatsnaam input{
     display: inline-block;
     width:52%;
+    background: none;
+    border: none;
+    font-size: 16px;
 }
 
-.plaatsnaam-van a{
+.plaatsnaam a{
     display: block;
     float:right;
     width:18%;
