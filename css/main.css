@@ -16,7 +16,7 @@ body{
 
 .navigation-bar{
     height:44px;
-    padding: 22px 0 0px 0;
+    padding: 20px 0 0px 0;
     background-color:#1f2c35;
     font-size:17px;
     text-align:center;
@@ -56,7 +56,6 @@ body{
 
 .swiper-container {
     z-index:1;
-    padding: 30px 0 48px 0;
     width:100%;
     font-size: 1.0em;
 }
@@ -68,183 +67,20 @@ body{
     overflow:auto;
 }
 
+/* Traject top */
+
 .traject-description{
-    padding: 45px 15px 5px 15px;
+    padding: 0px 15px 0 15px;
     text-transform: uppercase;
     background: #53bbb4;
     color:#fff;
-    line-height: 32px;
+    height: 5em;
 }
 
 .traject-description h1{
     font-weight: normal;
-    font-size: 16px;
-    margin:0;padding: 0;
-}
-
-ul.traject{
-    list-style: none;;
-    padding:0;
     margin: 0;
-    color: #6a6968;
 }
-
-ul.traject li{
-    width: 100%;
-    float:left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-ul.traject li:nth-child(even){
-    background-color:#f8f3ee;
-}
-
-ul.traject .schedule { 
-    margin-left: 15px;
-    float: left;
-    width:35%;
-}
-
-ul.traject i{
-    float:left;
-}
-ul.traject .transport p{
-    font-size: 12px;
-    width: 200px;
-    text-transform: uppercase;
-}
-
-ul.traject .transport{
-   width:50px;
-    display: inline-block;
-    position: relative;
-}
-
-ul.traject .time { 
-    float:right;
-    margin-right:15px;
-    text-transform: uppercase;
-}
-
-.schedule span {
-    float:left;
-}
-
-li.opened .iconsprite--arrow {}
-
-.transport-time {}
-
-.transport-description {}
-
-.information {
-    display:none;
-}
-
-.transport-ontime {}
-
-.transport-number {}
-/*
-li[opened="opened"] .transports {
-    width:80%;
-}*/
-
-li[opened="opened"] .transport-time {}
-
-li[opened="opened"] .transport-description {
-    float: right;
-}
-
-li[opened="opened"] .transport-ontime {}
-
-li[opened="opened"] .transport-number {
-    float: right;
-}
-
-.transport p span {
-    display: inline-block;
-}
-
-.late {
-    color:#d36f6d;
-}
-
-.transports{
-    position: relative;
-    float:left;
-    width:170px;
-}
-
-.transport {
-    /* width: 80%; */
-}
-
-.transport p{
-    width:170px;
-    float:left;
-    margin:0;
-}
-
-/* Add traject */
-
-.addtraject {
-    position:absolute;
-    background-color:#000;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:2;
-    display:none;
-}
-
-.editsettings {
-    position:absolute;
-    background-color:#50bcb5;
-    top: 16px;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:2;
-    display:none;
-}
-img.closesettings {
-    max-width:100%;
-}
-
-/* Animations */
-@keyframes rotate{
-0% {
-      transform:rotate(0deg);
-      -webkit-transform:rotate(0deg);
-      -moz-transform:rotate(0deg);
-   }
-}
-100%{
-/*transform*/
--webkit-transform:rotate(90deg);
-   -moz-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-     -o-transform:rotate(90deg);
-        transform:rotate(90deg);
-}
-
-li[opened="opened"] .iconsprite--arrow {
-/*transition*/
--webkit-transition:All 0.5s ease;
-   -moz-transition:All 0.5s ease;
-     -o-transition:All 0.5s ease;
-        transition:All 0.5s ease;
-/*transform*/
--webkit-transform:rotate(90deg);
-   -moz-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-     -o-transform:rotate(90deg);
-        transform:rotate(90deg);
-        margin-left: 14px;
-}
-
-
 
 /* Iconsprite-pt */
 
@@ -299,17 +135,6 @@ li[opened="opened"] .iconsprite--arrow {
     width: 15px;
     height: 10px;
     margin: 0.3em;
-    /*transition*/
-    -webkit-transition:All 0.2s ease;
-       -moz-transition:All 0.2s ease;
-         -o-transition:All 0.2s ease;
-            transition:All 0.2s ease;
-    /*transform*/
-    -webkit-transform:rotate(0deg);
-       -moz-transform:rotate(0deg);
-        -ms-transform:rotate(0deg);
-         -o-transform:rotate(0deg);
-            transform:rotate(0deg);
     }
 }
 
@@ -340,16 +165,7 @@ li[opened="opened"] .iconsprite--arrow {
 
     .iconsprite--arrow {
         background-position:0 0;
-        /*transition*/
-        -webkit-transition:All 0.2s ease;
-           -moz-transition:All 0.2s ease;
-             -o-transition:All 0.2s ease;
-                transition:All 0.2s ease;
-        /*transform*/
-        -webkit-transform:rotate(0deg);
-           -moz-transform:rotate(0deg);
-            -ms-transform:rotate(0deg);
-             -o-transform:rotate(0deg);
-                transform:rotate(0deg);
     }
 }
+
+/* Hier doet Jim dingen typen */
