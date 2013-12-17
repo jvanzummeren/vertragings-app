@@ -17,7 +17,7 @@ body{
 .navigation-bar{
     height:44px;
     padding: 20px 0 0px 0;
-    background-color:#1f2c35;
+    background-color: #419691;
     font-size:17px;
     text-align:center;
     color:#FFFFFF;
@@ -358,46 +358,6 @@ li.traject .traject-short {
 body{
     background:#51bcb5;
 }
-
-.navigation-bar-toevoegen {
-    height:44px;
-    padding: 20px 0 0px 0;
-    background-color:#1f2c35;
-    font-size:17px;
-    color:#FFFFFF;
-    position:fixed; 
-    z-index:2;
-    top:0;
-    left:0;
-    right:0;
-    line-height:44px;
-    opacity: 1;    
-    text-transform: uppercase;
-}
-
-.navigation-bar-toevoegen h1 {
-    font-weight:normal; 
-    margin: 0;
-    font-size: 1.3em;
-    width: 60%;
-    line-height: 1.7;
-    display: inline-block;
-    text-align: center;
-}
-
-.toevoegen .navigation-bar-toevoegen .button-back {
-    width: 20%;
-} 
-
-.toevoegen .navigation-bar-toevoegen .button-back .icon-back {
-    background: url('../img/traject-toevoegen/icon-back.png') 0 0px no-repeat;
-    background-size: 100%;
-    width: 55px;
-    height: 21px;
-    display: inline-block;
-    margin-left: 2%;
-}
-
 .traject-toevoegen{
     padding-top:64px;
     height:100%;
@@ -642,21 +602,10 @@ body{
     height: 65px;
     margin-left:9px;
     display: inline-block;
-    background: #cecece;
+    background: orange;
     opacity: 0.5;
     border:1px solid #f2ecec;
     position: relative;
-}
-
-.traject-toevoegen-customimage ul li:after {
-    content:"";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    background: url('../img/traject-toevoegen/icon-unchecked.png') 0 0px no-repeat;
-    background-size: 100%;
-    right:5px;
-    bottom:5px;
 }
 
 .traject-toevoegen-customimage ul li:nth-child(1) {
@@ -690,8 +639,7 @@ body{
     width: 15px;
     height: 15px;
     position: absolute;
-    background: url('../img/traject-toevoegen/icon-checked.png') 0 0px no-repeat;
-    background-size: 100%;
+    background: #ccc;
     right:5px;
     bottom:5px;
 }
