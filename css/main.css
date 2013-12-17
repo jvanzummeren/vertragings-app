@@ -67,6 +67,33 @@ body{
     overflow:auto;
 }
 
+/* Pagination */
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+
+.swiper-container, .swiper-slide {
+ height: 600PX;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  /*box-shadow: 0px 1px 2px #555 inset;*/
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
 /* Traject top */
 
 .traject-description {
@@ -95,42 +122,10 @@ body{
     width: 100%;
 }
 
-/* Pagination */
-.pagination {
-  position: absolute;
-  left: 0;
-  text-align: center;
-  bottom:5px;
-  width: 100%;
-}
-
-.swiper-container, .swiper-slide {
- height: 600PX;
-}
-
-.swiper-pagination-switch {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #999;
-  /*box-shadow: 0px 1px 2px #555 inset;*/
-  margin: 0 3px;
-  cursor: pointer;
-}
-.swiper-active-switch {
-  background: #fff;
-}
 
 /* Traject individual delayed */
 li.traject .delayed .traject-short {}
 .arrival-delay {}
-
-.transport.delayed .box-left > i {
-    background: url(http://www.placehold.it/33x33);
-    width: 33px;
-    height: 33px;
-}
 .transport.delayed .time-start {}
 .transport.delayed .time-end {}
 .transport.delayed .transport {}
@@ -140,6 +135,7 @@ li.traject .delayed .traject-short {}
 .transport.delayed .box-right {}
 .transport.delayed .traject li {}
 .transport.delayed .transport > div {}
+.transport.delayed .box-right span {}
 
 
 /* Traject individual */
@@ -156,9 +152,9 @@ li.traject .delayed .traject-short {}
 }
 
 .box-left > i {
-    background: url(http://www.placehold.it/20x20);
-    width: 20px;
-    height: 20px;
+    background: url(http://www.placehold.it/33x33);
+    width: 33px;
+    height: 33px;
     margin: 0 auto;
     display: block;
     clear: both;
@@ -207,6 +203,11 @@ li.traject .traject-short {
 .transport > div {
     height: 100%;
     float: left;
+}
+
+.box-right span {
+    float: left;
+    width: 100%;
 }
 
 
