@@ -282,7 +282,6 @@
 
 	<script src="js/jquery.storageapi.js"></script>
 
-	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/idangerous.swiper-2.1.min.js"></script>
 	<script>
 		var randomTrajecten = ["School", "Werk", "Vriendin", "Bibliotheek", "Universiteit"];
@@ -317,17 +316,8 @@
 			$('.toevoegen').hide();
 		});
 
-		$(".add").click(function(){
-						
+		$(".add").click(function(){		
 			$('.toevoegen').show();
-
-			return;
-			var trajectNaam = randomTrajecten[Math.floor(Math.random() * randomTrajecten.length)];
-			var van = "Haarlem";
-			var naar = "Amsterdam";
-			saveTrajectSlide(trajectNaam, van, naar);
-			addTrajectSlide(trajectNaam, van, naar);
-			mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
 		});
 
 		function addTrajectSlide(trajectNaam, van, naar){	
@@ -340,15 +330,7 @@
 	    	
 		}
 
-		function saveTrajectSlide(trajectNaam, van, naar){
-			trajecten.push({
-				trajectNaam : trajectNaam,
-				van : van,
-				naar: naar
-			});
 
-			storage.set('trajecten', trajecten);
-		}
 
 	</script>
 	<script src="js/show-traject-details.js"></script>

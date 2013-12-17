@@ -39,7 +39,7 @@
       }, 200);
     });
 
-    $( ".plaatsnaam-input" ).blur(function(e){
+    $( ".plaatsnaam a" ).click(function(e){
       $('.overlay').fadeOut(200);
         var container = $(this).closest("div");
 
