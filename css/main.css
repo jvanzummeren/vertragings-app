@@ -200,8 +200,10 @@ li.traject .traject-short .is-selected {}
 li.traject .traject-short .is-selected:after {}
 .traject-short-time {
     float: left;
-    margin-top: 0.8em;
+    margin-top: 0.4em;
     margin-left: 1em;
+    font-size: 1.3em;
+    color: #4d4c4b;
 }
 
 .traject-short > .iconsprite--collapse {
