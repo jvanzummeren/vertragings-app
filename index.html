@@ -179,6 +179,9 @@
 		  	<span class="button-back">
 				<i class="icon-back"></i>
 			</span>
+		  	<span class="button-cancel">
+				<i class="icon-cancel">Annuleer</i>
+			</span>
 		    <h1>toevoegen</h1>  
 		  </header>
 
@@ -248,10 +251,6 @@
 		      </section>
 		    </section>
 
-		    <section class="traject-toevoegen-back">
-		      <button class="traject-toevoegen-button">VORIGE</button>
-		    </section>
-
 		    <section class="traject-toevoegen-finish">
 		      <button class="traject-toevoegen-button">VOEG TRAJECT TOE</button>
 		    </section>
@@ -265,10 +264,10 @@
 	<script src="js/plaatsnamen.js"></script>
 	<script src="js/plaatsnamen_autocomplete.js"></script>
 	<script src="js/traject-toevoegen.js"></script>
-
 	<script src="js/jquery.storageapi.js"></script>
-
 	<script src="js/idangerous.swiper-2.1.min.js"></script>
+	<script src="js/traject-expand.js"></script>
+	
 	<script>
 		var randomTrajecten = ["School", "Werk", "Vriendin", "Bibliotheek", "Universiteit"];
 		var mySwiper;
@@ -298,14 +297,12 @@
 		    })
 		});
 
-		$('.toevoegen .settings').click(function(){
+		$('.toevoegen .button-cancel').click(function(){
 			hideToevoegen();
 		});
 
 		$(".add").click(function(){	
 			showToevoegen();
-
-
 		});
 
 		function addTrajectSlide(trajectNaam, van, naar){	
