@@ -291,9 +291,9 @@ body{
   bottom:5px;
   width: 100%;
 }
-.swiper-wrapper {
-  height: 80%;
-  overflow: hidden;
+
+.swiper-container, .swiper-slide {
+ height:400px;
 }
 
 .swiper-pagination-switch {

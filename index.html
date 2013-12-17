@@ -118,7 +118,8 @@
 		    mySwiper = new Swiper('.swiper-container', {
 		      loop:false,
 		      pagination: '.pagination',
-		      paginationClickable: true
+		      paginationClickable: true,
+		      cssWidthAndHeight : true
 		    });
 
 		    $(trajecten).each(function(index, value){
@@ -143,6 +144,8 @@
 		function addTrajectSlide(trajectNaam, van, naar){	
 			var newSlide = $('.swiper-slide:eq(0)').clone();
 	    	newSlide.find('.traject-name').html(trajectNaam);
+	    	newSlide.find('.from').html(van);
+	    	newSlide.find('.to').html(naar);
 	    	newSlide.insertAfter('.swiper-slide:last');
 			mySwiper.reInit();
 	    	
