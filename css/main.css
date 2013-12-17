@@ -122,33 +122,67 @@ body{
     width: 100%;
 }
 
+li.traject:nth-child(odd) {
+    background-color:#fff;
+}
+
+li.traject:nth-child(even) {
+    background-color:#fef9f4;
+}
+
+.box-right > div {
+    margin-top: 1.4em;
+}
+
+.additional-information {
+    font-size: 0.8em;
+}
+
 
 /* Traject individual delayed */
 li.traject .delayed .traject-short {}
+li.traject.is-selected .traject-short{
+    position:relative;
+}
+li.traject.is-selected .traject-short:after {
+    content:"";
+    position:absolute;
+    border: 1px solid #C9C9C9;
+    bottom: 0px;
+    height: 1px;
+    left: -5px;
+    right: -5px;
+}
 .arrival-delay {}
 .transport.delayed .time-start {}
 .transport.delayed .time-end {}
 .transport.delayed .transport {}
-.transport.delayed .box-left {}
+.transport.delayed .box-left {
+    background-color: #d67470;
+}
 .transport.delayed .time-added {}
 .transport.delayed .time-arrival {}
-.transport.delayed .box-right {}
+.transport.delayed .box-right {
+    background-color: #fbf1f0;
+}
 .transport.delayed .traject li {}
 .transport.delayed .transport > div {}
 .transport.delayed .box-right span {}
 
 
 /* Traject individual */
+li.traject .traject-short .is-selected {}
+li.traject .traject-short .is-selected:after {}
 .traject-short-time {
     float: left;
-    margin-top: 0.4em;
+    margin-top: 0.8em;
     margin-left: 1em;
 }
 
 .traject-short > .iconsprite--collapse {
     float: right;
     margin-right: 1em;
-    margin-top: 0.4em;
+    margin-top: 0.8em;
 }
 
 .box-left > i {
@@ -167,7 +201,7 @@ li.traject .delayed .traject-short {}
     margin: 0 0.1em;
 }
 li.traject {
-    background-color: #fef9f4;
+    display: block;
 }
 li.traject > div {
     width: 100%;
@@ -182,11 +216,13 @@ li.traject .traject-short {
 .transport {}
 .box-left {
     width: 26.2%;
+    background-color: #efefef;
 }
 .time-added {
     text-align: center;
     width: 100%;
     float: left;
+    margin-top: 0.3em;
 }
 .time-arrival {
     text-align: center;
@@ -194,7 +230,9 @@ li.traject .traject-short {
     float: left;
 }
 .box-right {
-    width: 73.8%;
+    width: 69.8%;
+    padding-left: 4%;
+    border-bottom: 1px solid #f1f1f1;
 }
 .traject li {
     list-style: none;
@@ -203,6 +241,8 @@ li.traject .traject-short {
 .transport > div {
     height: 100%;
     float: left;
+    color: #4d4c4b;
+    text-transform: uppercase;
 }
 
 .box-right span {
