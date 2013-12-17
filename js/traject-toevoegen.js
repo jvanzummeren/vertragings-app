@@ -2,6 +2,7 @@ $(function(){
 	$('.traject-toevoegen-nextstep button').click(function(){
 		$('.first-step').hide();
 		$('.second-step').show();
+		$('.toevoegen').scrollTop(0);
 		$('.toevoegen .button-cancel').hide();
 		$('.toevoegen .button-back').css('display', 'inline-block');
 
@@ -9,7 +10,8 @@ $(function(){
 
 	$('.toevoegen .button-back').click(function(){
 		$('.first-step').show();
-		$('.second-step').hide();	
+		$('.second-step').hide();
+		$('.toevoegen').scrollTop(0);	
 		$('.toevoegen .button-cancel').show();
 		$('.toevoegen .button-back').hide();	
 	});
@@ -60,6 +62,7 @@ $(function(){
 	function showToevoegen(){
 		$('.first-step').show();
 		$('.second-step').hide();	
+		$('.toevoegen').height($(window).height());
 		$('.toevoegen .button-cancel').show();
 		$('.toevoegen .button-back').hide();
 
