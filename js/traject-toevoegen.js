@@ -3,7 +3,8 @@ $(function(){
 		$('.first-step').hide();
 		$('.second-step').show();
 		$('.toevoegen .button-cancel').hide();
-		$('.toevoegen .button-back').show();
+		$('.toevoegen .button-back').css('display', 'inline-block');
+
 	});
 
 	$('.toevoegen .button-back').click(function(){
