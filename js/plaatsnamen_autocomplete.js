@@ -22,6 +22,8 @@
       var container = $(this).closest("div")
       container.find('a').show();
 
+      $('body').animate({scrollTop:0}, 200);
+
       if(!container.data("top")){
         var top = container.css("top");
         container.data("top", top);      
