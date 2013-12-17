@@ -388,16 +388,27 @@ body{
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
-    width: 25%;
+    width: 23%;
+    position: relative;
+    margin-left: 2%;
 } 
 
 .toevoegen .navigation-bar-toevoegen .button-back .icon-back {
-    background: url('../img/traject-toevoegen/icon-back.png') 0 0px no-repeat;
-    background-size: 100%;
-    width: 55px;
-    height: 21px;
-    display: inline-block;
+    font-size: 17px;
+    font-style: normal;
+    padding-left: 15px;
     margin-left: 2%;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-back .icon-back:before {
+    content: "";
+    background: url('../img/traject-toevoegen/icon-back2.png') 0 0px no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 21px;
+    position: absolute;
+    top:10px;
+    left:0px;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-cancel {
