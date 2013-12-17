@@ -18,9 +18,14 @@
         .appendTo( ul );
     };
 
+
+
     $( ".plaatsnaam-input" ).focus(function(e){
+      $('.overlay').fadeIn(200);
       var container = $(this).closest("div")
       container.find('a').show();
+
+      container.css('z-index', 10);
 
       $('body').animate({scrollTop:0}, 200);
 
@@ -35,11 +40,17 @@
     });
 
     $( ".plaatsnaam-input" ).blur(function(e){
-        var container = $(this).closest("div")
+      $('.overlay').fadeOut(200);
+        var container = $(this).closest("div");
+
+        $('.ui-autocomplete').hide();
+
         container.find('a').hide();
-        $(this).closest("div").animate({
+        container.animate({
           top: container.data("top")
-        }, 200);
+        }, {duration:200, complete: function(){
+          $(this).css('z-index', 0);
+        }});
     });
 
 

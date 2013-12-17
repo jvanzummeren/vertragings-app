@@ -12,10 +12,9 @@
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="js/plaatsnamen.js"></script>
   <script src="js/plaatsnamen_autocomplete.js"></script>
-  <script src="js/traject_toevoegen.js"></script>
+  <script src="js/traject-toevoegen.js"></script>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
-  
-  
+
 </head>
 <body>
   <header class="navigation-bar">
@@ -23,6 +22,7 @@
   </header>
 
   <section class="first-step">
+    <div class="overlay"></div>
     <section class="traject-toevoegen">
       <div class="plaatsnaam plaatsnaam-van">
         <label for="tags">VAN: </label>
@@ -77,6 +77,7 @@
               <li><img src="" alt="" class="thumbs"></li>
               <li><img src="" alt="" class="thumbs"></li>
             </ul>
+            <input type="hidden" class="selected-image" value="0"/>
           </section>
         </section>
 
@@ -86,8 +87,12 @@
       </section>
     </section>
 
+    <section class="traject-toevoegen-back">
+      <button class="traject-toevoegen-button">VORIGE</button>
+    </section>
+
     <section class="traject-toevoegen-finish">
-      <button class="traject-toevoegen-button" onclick="#">VOEG TRAJECT TOE</button>
+      <button class="traject-toevoegen-button">VOEG TRAJECT TOE</button>
     </section>
 
   </section>
