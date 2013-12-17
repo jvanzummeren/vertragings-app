@@ -230,18 +230,19 @@ body{
     padding-top:10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 108px;
+    top: 88px;
     z-index: 10;
     width:100%;
+    margin-top:20px; 
 }
 
 .plaatsnaam-naar{
-    top:196px;
+    top:176px;
 }
 
 .plaatsnaam label{
     display: inline-block;
-    width:10%;
+    width:18%;
     margin-left:2%;
     margin-right:2%;
     font-size: 20px;
@@ -258,13 +259,14 @@ body{
 .plaatsnaam a{
     display: none;
     float:right;
-    width:18%;
+    width:12%;
     padding:0 2%;
     margin-left:2%;
     margin-right:2%;
     background:#000;
     color:#fff;
     text-decoration: none;
+    text-align: center;
 }
 
 .ui-menu .ui-menu-item a{ 
