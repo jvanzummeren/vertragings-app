@@ -316,7 +316,7 @@ body{
 .traject-toevoegen-vervoersmiddelen {
     margin-top:220px;
     width: 100%;
-    background: #fff;
+    background: #f2ecec;
 }
 
 .traject-toevoegen-vervoersmiddelen ul {
@@ -390,6 +390,18 @@ body{
 .image-metro[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/metro-on.png') 0 0px no-repeat;
     background-size:100%;
+}
+
+.traject-toevoegen-meldingen {
+    background: #f2ecec;
+    margin-top: 44px;
+    padding:10px 0px 10px 0px;
+}
+
+.traject-toevoegen-meldingen span {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 2%;
 }
 
 .traject-toevoegen-nextstep {
