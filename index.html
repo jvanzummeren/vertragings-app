@@ -269,6 +269,9 @@
 		
 
 		$(function(){
+		
+			$('.swiper-container, .swiper-slide').height($(window).height());
+			
 		    mySwiper = new Swiper('.swiper-container', {
 		      loop:false,
 		      pagination: '.pagination',

@@ -79,9 +79,9 @@ body{
   width: 100%;
 }
 
-.swiper-container, .swiper-slide {
+/*.swiper-container, .swiper-slide {
    height: 568px;
-}
+}*/
 
 .swiper-pagination-switch {
   display: inline-block;
