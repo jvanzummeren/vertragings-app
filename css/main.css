@@ -124,6 +124,7 @@ body{
 .traject-container {
     position: relative;
     width: 100%;
+    padding-bottom: 4em;
 }
 
 li.traject:nth-child(odd) {
