@@ -308,11 +308,23 @@ body{
     height: 65px;
     margin-left:9px;
     display: inline-block;
-    background: orange;
+    background: #cecece;
     opacity: 0.5;
     border:1px solid #f2ecec;
     position: relative;
 }
+
+.traject-toevoegen-customimage ul li:after {
+    content:"";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url('../img/traject-toevoegen/icon-unchecked.png') 0 0px no-repeat;
+    background-size: 100%;
+    right:5px;
+    bottom:5px;
+}
+
 
 .traject-toevoegen-customimage ul li:nth-child(1) {
     margin-left:0px;
@@ -345,7 +357,8 @@ body{
     width: 15px;
     height: 15px;
     position: absolute;
-    background: #ccc;
+    background: url('../img/traject-toevoegen/icon-checked.png') 0 0px no-repeat;
+    background-size: 100%;
     right:5px;
     bottom:5px;
 }
