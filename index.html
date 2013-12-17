@@ -87,6 +87,8 @@
 		</div>
 	</div>
 
+	<div class="pagination"></div>
+
 	<!--
 	<i class="iconsprite-pt iconsprite--bus ontime"></i>
 	<i class="iconsprite-pt iconsprite--bus late"></i>
@@ -98,31 +100,62 @@
 	
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.storageapi.js"></script>
+
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/idangerous.swiper-2.1.min.js"></script>
 	<script>
 		var randomTrajecten = ["School", "Werk", "Vriendin", "Bibliotheek", "Universiteit"];
 		var mySwiper;
+		var storage = $.localStorage;
+		var trajecten = storage.get('trajecten');
+
+		if(!trajecten) trajecten = [];
+
+
+
 		$(function(){
 		    mySwiper = new Swiper('.swiper-container', {
-		      loop:false
+		      loop:false,
+		      pagination: '.pagination',
+		      paginationClickable: true
 		    });
-	    	
+
+		    $(trajecten).each(function(index, value){
+		    	console.log(this);
+		    	console.log(value);
+		    	var trajectNaam = this.trajectNaam;
+				var van = this.van;
+				var naar = this.naar;
+				addTrajectSlide(trajectNaam, van, naar);
+		    })
 		});
 
 		$(".add").click(function(){
-			addTraject();
-		})
-
-		function addTraject(){
 			var trajectNaam = randomTrajecten[Math.floor(Math.random() * randomTrajecten.length)];
+			var van = "Haarlem";
+			var naar = "Amsterdam";
+			saveTrajectSlide(trajectNaam, van, naar);
+			addTrajectSlide(trajectNaam, van, naar);
+			mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
+		});
+
+		function addTrajectSlide(trajectNaam, van, naar){	
 			var newSlide = $('.swiper-slide:eq(0)').clone();
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.insertAfter('.swiper-slide:last');
 			mySwiper.reInit();
-	    	mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
-
 	    	
+		}
+
+		function saveTrajectSlide(trajectNaam, van, naar){
+			trajecten.push({
+				trajectNaam : trajectNaam,
+				van : van,
+				naar: naar
+			});
+
+			storage.set('trajecten', trajecten);
 		}
 
 	</script>

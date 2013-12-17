@@ -33,11 +33,11 @@
     });
 
     $( ".plaatsnaam-input" ).blur(function(e){
-      var container = $(this).closest("div")
-      container.find('a').hide();
-      $(this).closest("div").animate({
-        top: container.data("top")
-      }, 200);
+        var container = $(this).closest("div")
+        container.find('a').hide();
+        $(this).closest("div").animate({
+          top: container.data("top")
+        }, 200);
     });
 
 
