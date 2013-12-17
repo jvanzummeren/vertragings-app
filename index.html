@@ -179,6 +179,9 @@
 		  	<span class="button-back">
 				<i class="icon-back"></i>
 			</span>
+		  	<span class="button-cancel">
+				<i class="icon-cancle">Annuleer</i>
+			</span>
 		    <h1>toevoegen</h1>  
 		  </header>
 
@@ -298,14 +301,12 @@
 		    })
 		});
 
-		$('.toevoegen .settings').click(function(){
+		$('.toevoegen .button-cancel').click(function(){
 			hideToevoegen();
 		});
 
 		$(".add").click(function(){	
 			showToevoegen();
-
-
 		});
 
 		function addTrajectSlide(trajectNaam, van, naar){	

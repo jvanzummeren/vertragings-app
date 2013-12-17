@@ -2,10 +2,15 @@ $(function(){
 	$('.traject-toevoegen-nextstep button').click(function(){
 		$('.first-step').hide();
 		$('.second-step').show();
+		$('.toevoegen .button-cancel').hide();
+		$('.toevoegen .button-back').show();
 	});
-	$('.traject-toevoegen-back button').click(function(){
+
+	$('.toevoegen .button-back').click(function(){
 		$('.first-step').show();
-		$('.second-step').hide();		
+		$('.second-step').hide();	
+		$('.toevoegen .button-cancel').show();
+		$('.toevoegen .button-back').hide();	
 	});
 
 	$('.traject-toevoegen-finish button').click(function(){
@@ -54,6 +59,8 @@ $(function(){
 	function showToevoegen(){
 		$('.first-step').show();
 		$('.second-step').hide();	
+		$('.toevoegen .button-cancel').show();
+		$('.toevoegen .button-back').hide();
 
 		var trajectNaam = $('.naam-input').val("");
 		var van = $('.plaatsnaam-van input').val("");
@@ -63,12 +70,12 @@ $(function(){
 
 		$('.toevoegen').animate({
 			top:0
-		}, 500);
+		}, 250);
 
-		$('.toevoegen .navigation-bar').css('top', '100%');
-		$('.toevoegen .navigation-bar').animate({
+		$('.navigation-bar-toevoegen').css('top', '100%');
+		$('.navigation-bar-toevoegen').animate({
 			top:0
-		}, 500);
+		}, 250);
 	}
 
 	function hideToevoegen(){
@@ -76,13 +83,13 @@ $(function(){
 		$('.toevoegen').animate({
 			top:'100%'
 		}, {
-			duration:500,
+			duration:250,
 			complete: function(){
 				$(this).hide();
 			}
 		});
 
-		$('.toevoegen .navigation-bar').animate({
+		$('.navigation-bar-toevoegen').animate({
 			top:'100%'
-		}, 500);
+		}, 250);
 	}
