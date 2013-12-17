@@ -358,6 +358,68 @@ li.traject .traject-short {
 body{
     background:#51bcb5;
 }
+
+.navigation-bar-toevoegen {
+    height:44px;
+    padding: 20px 0 0px 0;
+    background-color:#419691;
+    font-size:17px;
+    color:#FFFFFF;
+    position:fixed; 
+    z-index:2;
+    top:0;
+    left:0;
+    right:0;
+    line-height:44px;
+    opacity: 1;    
+}
+
+.navigation-bar-toevoegen h1 {
+    font-weight:normal; 
+    margin: 0;
+    font-size: 1.3em;
+    width: 50%;
+    line-height: 1.7;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-back {
+    width: 23%;
+    position: relative;
+    margin-left: 2%;
+} 
+
+.toevoegen .navigation-bar-toevoegen .button-back .icon-back {
+    font-size: 17px;
+    font-style: normal;
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-back .icon-back:before {
+    content: "";
+    background: url('../img/traject-toevoegen/icon-back2.png') 0 0px no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 21px;
+    position: absolute;
+    top:10px;
+    left:0px;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-cancel {
+    width: 25%;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-cancel .icon-cancel {
+    margin-left: 2%;
+    font-size: 17px;
+    font-style: normal;
+}
+
+>>>>>>> 7b4fde255985f39879c62b7ed83cafc0fc8f99fc
 .traject-toevoegen{
     padding-top:64px;
     height:100%;
