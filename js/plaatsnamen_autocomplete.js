@@ -9,11 +9,8 @@
         $('.ui-menu').css('border-radius', '0');
       },
       select: function (event, ui) {
-       // alert(ui.item.value);
         var container = $(this).closest("div");
-        removeAutoComplete(container)
-
-
+        removeAutoComplete(container);
       }
     }).off('blur').data( "ui-autocomplete" )._renderItem = function( ul, item ) {
       var number = Math.floor(Math.random() * 99);
