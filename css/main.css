@@ -101,6 +101,9 @@ body{
 
 /* Traject top */
 
+
+
+
 .traject-description {
     padding: 1em 2em;
     text-transform: uppercase;
@@ -232,7 +235,9 @@ li.traject .traject-short {
 }
 .time-start {}
 .time-end {}
-.transport {}
+.transport {
+    display:none;
+}
 .box-left {
     width: 26.2%;
     background-color: #efefef;
@@ -278,6 +283,13 @@ li.traject .traject-short {
     zoom: 50%;
 }
 
+.traject .traject-short .iconsprite--collapse {
+    display:none;
+}
+
+.traject.is-selected .traject-short .iconsprite--collapse {
+    display:block;
+}
 
 .iconsprite--train {
     background-position:0 -70px;
