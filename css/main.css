@@ -325,23 +325,69 @@ body{
 
 .traject-toevoegen-vervoersmiddelen ul li {
     display:inline-block;
+    position: relative;
+    width: 60px;
+    height: 50px;
+    margin: 0px 15px 0px 15px;
 }
 
 .traject-toevoegen-vervoersmiddelen ul li input {
     width: 60px;
     height: 50px;
-}
-
-.image-bus[type=checkbox] {
+    cursor: pointer;
     opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin:0px;
+}
+.traject-toevoegen-vervoersmiddelen ul li label {
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left:0px;
 }
 
 .image-bus[type=checkbox] + label {
     background: url('../img/traject-toevoegen/bus-off.png') 0 0px no-repeat;
+    background-size:100%;
 }
 
 .image-bus[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/bus-on.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-trein[type=checkbox] + label {
+    background: url('../img/traject-toevoegen/trein-off.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-trein[type=checkbox]:checked + label {
+    background: url('../img/traject-toevoegen/trein-on.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-tram[type=checkbox] + label {
+    background: url('../img/traject-toevoegen/tram-off.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-tram[type=checkbox]:checked + label {
+    background: url('../img/traject-toevoegen/tram-on.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-metro[type=checkbox] + label {
+    background: url('../img/traject-toevoegen/metro-off.png') 0 0px no-repeat;
+    background-size:100%;
+}
+
+.image-metro[type=checkbox]:checked + label {
+    background: url('../img/traject-toevoegen/metro-on.png') 0 0px no-repeat;
+    background-size:100%;
 }
 
 .traject-toevoegen-nextstep {
