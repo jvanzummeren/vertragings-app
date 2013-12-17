@@ -1,6 +1,6 @@
 $(function(){
 
-	$('.add, .closetraject').click(function(){
+/*	$('.add, .closetraject').click(function(){
             
         if ($('.addtraject').is(':hidden')) {
            
@@ -20,6 +20,6 @@ $(function(){
            
            $('.editsettings').hide('slide',{direction:'down'},400);
         }
-	});
+	});*/
 
 })

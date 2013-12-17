@@ -14,16 +14,16 @@
 </head>
 <body>
 	<header class="navigation-bar">
-		<span class="menu-button settings">
-			<i class="menusprite menusprite--settings"></i>
+		<span class="menu-button add">
+			<i class="menusprite menusprite--add"></i>
 		</span>
 		<h1>Trajecten</h1>	
 	</header>
 
-	<section class="editsettings">
-		<!--<button class="closesettings"></button>-->
+	<!--section class="editsettings">
+		<button class="closesettings"></button>
 		<img src="img/sprites/instellingenplaceholder.png" alt="" class="closesettings">
-	</section>
+	</section-->
 
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
@@ -97,12 +97,34 @@
 	-->
 	
 	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/idangerous.swiper-2.1.min.js"></script>
 	<script>
-	    var mySwiper = new Swiper('.swiper-container', {
-	      loop:true
-	    });
+		var randomTrajecten = ["School", "Werk", "Vriendin", "Bibliotheek", "Universiteit"];
+		var mySwiper;
+		$(function(){
+		    mySwiper = new Swiper('.swiper-container', {
+		      loop:false
+		    });
+	    	
+		});
+
+		$(".add").click(function(){
+			addTraject();
+		})
+
+		function addTraject(){
+			var trajectNaam = randomTrajecten[Math.floor(Math.random() * randomTrajecten.length)];
+			var newSlide = $('.swiper-slide:eq(0)').clone();
+	    	newSlide.find('.traject-name').html(trajectNaam);
+	    	newSlide.insertAfter('.swiper-slide:last');
+			mySwiper.reInit();
+	    	mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
+
+	    	
+		}
+
 	</script>
 	<script src="js/show-traject-details.js"></script>
 
