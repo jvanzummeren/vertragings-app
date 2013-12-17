@@ -171,7 +171,7 @@ li.traject.is-selected .traject-short:after {
 .transport.delayed .time-arrival {}
 .transport.delayed .box-right {
     background-color: #fbf1f0;
-    border-bottom: 1px solid #FDE2E0;
+    border-bottom: 1px solid #FFD0CD;
 }
 .transport.delayed .traject li {}
 .transport.delayed .transport > div {}
@@ -206,9 +206,6 @@ li.traject .traject-short .is-selected:after {}
 }
 
 .box-left > i {
-    background: url(http://www.placehold.it/33x33);
-    width: 33px;
-    height: 33px;
     margin: 0 auto;
     display: block;
     clear: both;
@@ -270,33 +267,43 @@ li.traject .traject-short {
     width: 100%;
 }
 
-
 /* Iconsprite-pt */
 
 .iconsprite-pt {
-    width:30px;
-    height:17px;
+    width:66px;
+    height:66px;
+    background-image: url(../img/sprites/iconsprite-traject.png);
+    zoom: 50%;
 }
+
 
 .iconsprite--train {
-    background-position: 0 0;
+    background-position:0 -70px;
 }
-
-.iconsprite--bus {
-    background-position: 0px -17px;
+.iconsprite--tram {
+    background-position:-90px -70px;
 }
-
 .iconsprite--subway {
-    background-position: 0 -35px;
+    background-position:-160px -70px;
+}
+.iconsprite--bus {
+    background-position:-230px -70px;
 }
 
-.sprite--late {
-    background-image: url(../img/sprites/iconsprite-pt-late.png);
+.delayed .iconsprite--train {
+    background-position:0 0;
+}
+.delayed .iconsprite--tram {
+    background-position:-90px 0;
+}
+.delayed  .iconsprite--subway {
+    background-position:-160px 0;
+}
+.delayed  .iconsprite--bus {
+    background-position:-230px 0;
 }
 
-.sprite--ontime {
-    background-image: url(../img/sprites/iconsprite-pt-ontime.png);
-}
+
 
 /* Menusprite */
 .menusprite {
@@ -329,23 +336,6 @@ li.traject .traject-short {
 
 /* Sprites high-res */
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { 
-    .sprite--late {
-        background-image: url(../img/sprites/iconsprite-pt-late@2x.png);
-        background-size:34px 60px;
-    }
-
-    .sprite--ontime {
-        background-image: url(../img/sprites/iconsprite-pt-ontime@2x.png);
-        background-size:34px 60px;
-    }
-
-     .iconsprite--bus {
-        background-position:0 -140px;
-    }
-
-    .iconsprite--subway {
-        background-position:0 -280px;
-    }
 
     .menusprite {
         background-image: url(../img/sprites/iconsprite-menu@2x.png);
