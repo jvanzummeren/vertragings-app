@@ -258,7 +258,7 @@ body{
 }
 
 .plaatsnaam a{
-    display: block;
+    display: none;
     float:right;
     width:18%;
     padding:0 2%;
@@ -274,8 +274,11 @@ body{
     height:44px;
     padding-left: 0;
     padding-right: 0;
-    line-height: 44px;
 }
+.ui-menu .ui-menu-item span{
+    font-size: 12px;
+    display: block;
+} 
 
 .ui-menu-item .ui-state-focus{ 
     background: #419691; 
