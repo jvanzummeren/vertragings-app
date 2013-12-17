@@ -97,11 +97,12 @@ body{
 /* Traject top */
 
 .traject-description {
-    padding: 0 2em;
+    padding: 1em 2em;
     text-transform: uppercase;
     background: #53bbb4;
     color:#fff;
-    height: 5em;
+    height: 4em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 .traject-description h1{
@@ -171,6 +172,18 @@ li.traject.is-selected .traject-short:after {
 
 
 /* Traject individual */
+.traject .transport:last-child {
+    position:relative;
+    }
+.traject .transport:last-child:after {
+    content:"";
+    position:absolute;
+    bottom: -5px;
+    border: 1px solid #C9C9C9;
+    left: -1px;
+    right: -2px;
+    height: 1px;
+}
 li.traject .traject-short .is-selected {}
 li.traject .traject-short .is-selected:after {}
 .traject-short-time {
