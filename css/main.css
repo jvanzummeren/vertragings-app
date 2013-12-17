@@ -95,29 +95,109 @@ body{
     width: 100%;
 }
 
+/* Pagination */
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+
+.swiper-container, .swiper-slide {
+ height: 600PX;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  /*box-shadow: 0px 1px 2px #555 inset;*/
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+/* Traject individual delayed */
+li.traject .delayed .traject-short {}
+.arrival-delay {}
+
+.transport.delayed .box-left > i {
+    background: url(http://www.placehold.it/33x33);
+    width: 33px;
+    height: 33px;
+}
+.transport.delayed .time-start {}
+.transport.delayed .time-end {}
+.transport.delayed .transport {}
+.transport.delayed .box-left {}
+.transport.delayed .time-added {}
+.transport.delayed .time-arrival {}
+.transport.delayed .box-right {}
+.transport.delayed .traject li {}
+.transport.delayed .transport > div {}
+
+
 /* Traject individual */
+.traject-short-time {
+    float: left;
+    margin-top: 0.4em;
+    margin-left: 1em;
+}
+
+.traject-short > .iconsprite--collapse {
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.4em;
+}
+
+.box-left > i {
+    background: url(http://www.placehold.it/20x20);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+
+.time-end.late {
+    color: #d67470;
+}
+.traject-short-time i {
+    margin: 0 0.1em;
+}
+li.traject {
+    background-color: #fef9f4;
+}
 li.traject > div {
     width: 100%;
     height: 5.125em;
 }
 
 li.traject .traject-short {
-    background-color: red;
     height: 2.75em;
 }
 .time-start {}
 .time-end {}
-.transport {
-    background-color: blue;
-}
+.transport {}
 .box-left {
-    background-color: green;
     width: 26.2%;
 }
-.time-added {}
-.time-arrival {}
+.time-added {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.time-arrival {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
 .box-right {
-    background-color: aliceblue;
     width: 73.8%;
 }
 .traject li {
@@ -128,6 +208,7 @@ li.traject .traject-short {
     height: 100%;
     float: left;
 }
+
 
 /* Iconsprite-pt */
 
@@ -284,34 +365,6 @@ body{
     background: #419691; 
     color:#fff; 
 }
-
-
-.pagination {
-  position: absolute;
-  left: 0;
-  text-align: center;
-  bottom:5px;
-  width: 100%;
-}
-
-.swiper-container, .swiper-slide {
- height:400px;
-}
-
-.swiper-pagination-switch {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #999;
-  /*box-shadow: 0px 1px 2px #555 inset;*/
-  margin: 0 3px;
-  cursor: pointer;
-}
-.swiper-active-switch {
-  background: #fff;
-}
-
 
 .traject-toevoegen-vervoersmiddelen {
     margin-top:220px;
