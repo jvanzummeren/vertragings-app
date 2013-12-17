@@ -167,11 +167,11 @@ li.traject.is-selected .traject-short:after {
 .transport.delayed .time-arrival {}
 .transport.delayed .box-right {
     background-color: #fbf1f0;
+    border-bottom: 1px solid #FDE2E0;
 }
 .transport.delayed .traject li {}
 .transport.delayed .transport > div {}
 .transport.delayed .box-right span {}
-
 
 /* Traject individual */
 .traject .transport:last-child {
