@@ -38,7 +38,7 @@ $(function(){
 		saveTrajectSlide(trajectNaam, van, naar);
 		addTrajectSlide(trajectNaam, van, naar);
 		mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
-		$('.toevoegen').hide();
+		hideToevoegen();
 	}
 
 	function saveTrajectSlide(trajectNaam, van, naar){
@@ -49,5 +49,40 @@ $(function(){
 		});
 		storage.set('trajecten', trajecten);
 	}
+});
 
-})
+	function showToevoegen(){
+		$('.first-step').show();
+		$('.second-step').hide();	
+
+		var trajectNaam = $('.naam-input').val("");
+		var van = $('.plaatsnaam-van input').val("");
+		var naar = $('.plaatsnaam-naar input').val("");
+		$('.toevoegen').css('top', '100%');
+		$('.toevoegen').show();
+
+		$('.toevoegen').animate({
+			top:0
+		}, 500);
+
+		$('.toevoegen .navigation-bar').css('top', '100%');
+		$('.toevoegen .navigation-bar').animate({
+			top:0
+		}, 500);
+	}
+
+	function hideToevoegen(){
+
+		$('.toevoegen').animate({
+			top:'100%'
+		}, {
+			duration:500,
+			complete: function(){
+				$(this).hide();
+			}
+		});
+
+		$('.toevoegen .navigation-bar').animate({
+			top:'100%'
+		}, 500);
+	}

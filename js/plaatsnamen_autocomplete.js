@@ -7,6 +7,12 @@
         $('.ui-menu').css('width', '98%');
         $('.ui-menu').css('left', '0');
         $('.ui-menu').css('border-radius', '0');
+      },
+      select: function (event, ui) {
+       // alert(ui.item.value);
+        var container = $(this).closest("div");
+        removeAutoComplete(container)
+
 
       }
     }).off('blur').data( "ui-autocomplete" )._renderItem = function( ul, item ) {
@@ -40,18 +46,22 @@
     });
 
     $( ".plaatsnaam a" ).click(function(e){
-      $('.overlay').fadeOut(200);
+     
         var container = $(this).closest("div");
-
-        $('.ui-autocomplete').hide();
-
-        container.find('a').hide();
-        container.animate({
-          top: container.data("top")
-        }, {duration:200, complete: function(){
-          $(this).css('z-index', 0);
-        }});
+        removeAutoComplete(container)
     });
 
 
   });
+
+  function removeAutoComplete(container){
+    $('.overlay').fadeOut(200);
+    $('.ui-autocomplete').hide();
+
+    container.find('a').hide();
+    container.animate({
+      top: container.data("top")
+    }, {duration:200, complete: function(){
+      $(this).css('z-index', 0);
+    }});
+  }

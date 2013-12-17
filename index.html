@@ -313,11 +313,13 @@
 		});
 
 		$('.toevoegen .settings').click(function(){
-			$('.toevoegen').hide();
+			hideToevoegen();
 		});
 
-		$(".add").click(function(){		
-			$('.toevoegen').show();
+		$(".add").click(function(){	
+			showToevoegen();
+
+
 		});
 
 		function addTrajectSlide(trajectNaam, van, naar){	
