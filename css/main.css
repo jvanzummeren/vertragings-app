@@ -395,7 +395,7 @@ body{
 .traject-toevoegen-meldingen {
     background: #f2ecec;
     margin-top: 44px;
-    padding:10px 0px 10px 0px;
+    padding:11px 0px 10px 0px;
 }
 
 .traject-toevoegen-meldingen span {
@@ -421,6 +421,134 @@ body{
     font-size:18px;
     text-transform: uppercase;
 }
+
+/*======== WEER VERWIJDEREN ========*/
+.first-step {
+    display:none;
+}
+
+.second-step {
+    display: block;
+}
+/*==================================*/
+
+.traject-toevoegen-title {
+    margin-top: 44px;
+    background:#f2ecec;
+    padding:10px 0px 10px 0px;
+    position: relative;
+}
+
+.traject-toevoegen-title label {
+    display: inline-block;
+    width:18%;
+    margin-left:2%;
+    margin-right:2%;
+    font-size: 20px;
+}
+
+.traject-toevoegen-title input {
+    display: inline-block;
+    width:52%;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.traject-toevoegen-title .input-description {
+    margin-left:2%;
+    position: absolute;
+    left:0px;
+    bottom:-20px;
+    width: 100%;
+    font-size: 14px;
+    color:#fff;
+}
+
+.traject-toevoegen-customimage .block1 {
+    margin-top: 44px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background: #f2ecec;
+}
+
+.traject-toevoegen-customimage span {
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.traject-toevoegen-customimage .custom-images {
+    padding-left:2%;
+    margin-top: 10px;
+}
+
+.traject-toevoegen-customimage ul {
+    padding: 0px;
+    margin:0px;
+}
+
+.traject-toevoegen-customimage ul li {
+    width: 65px;
+    height: 65px;
+    margin-left:9px;
+    display: inline-block;
+    background: orange;
+    opacity: 0.5;
+    border:1px solid #f2ecec;
+    position: relative;
+}
+
+.traject-toevoegen-customimage ul li:nth-child(1) {
+    margin-left:0px;
+    margin-bottom:9px; 
+}
+
+.traject-toevoegen-customimage ul li:nth-child(2) {
+    margin-bottom:9px; 
+}
+
+.traject-toevoegen-customimage ul li:nth-child(3) {
+    margin-bottom:9px; 
+}
+
+.traject-toevoegen-customimage ul li:nth-child(4) {
+    margin-bottom:9px; 
+}
+
+.traject-toevoegen-customimage ul li:nth-child(5) {
+    margin-left:0px;
+}
+
+.custom-images ul .selected {
+    opacity: 1;
+    border:1px solid #51bcb5;
+}
+
+.custom-images ul .selected:after {
+    content:"";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #ccc;
+    right:5px;
+    bottom:5px;
+}
+.traject-toevoegen-customimage .block2 {
+    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background: #f2ecec;
+}
+
+.traject-toevoegen-finish {
+    margin-top: 44px;
+}
+
+
+
+
+
+
 
 
 
