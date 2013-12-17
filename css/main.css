@@ -230,14 +230,13 @@ body{
     padding-top:10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 100px;
+    top: 108px;
     z-index: 10;
-    margin-top: 20px;
     width:100%;
 }
 
 .plaatsnaam-naar{
-    top:200px;
+    top:196px;
 }
 
 .plaatsnaam label{
@@ -245,7 +244,6 @@ body{
     width:10%;
     margin-left:2%;
     margin-right:2%;
-
     font-size: 20px;
 }
 
@@ -285,6 +283,7 @@ body{
     color:#fff; 
 }
 
+
 .pagination {
   position: absolute;
   left: 0;
@@ -311,3 +310,43 @@ body{
   background: #fff;
 }
 
+
+.traject-toevoegen-vervoersmiddelen {
+    margin-top:220px;
+    width: 100%;
+    background: #fff;
+}
+
+.traject-toevoegen-vervoersmiddelen ul {
+    padding:10px 0px 10px 0px;
+    margin:0px;
+    text-align: center;
+}  
+
+.traject-toevoegen-vervoersmiddelen ul li {
+    display:inline-block;
+}
+
+.traject-toevoegen-vervoersmiddelen ul li input {
+    width: 60px;
+    height: 30px;
+    background:orange;
+}
+
+.traject-toevoegen-nextstep {
+    margin-top: 44px;
+    width: 100%;
+}
+
+.traject-toevoegen-button {
+    display: block;
+    width: 210px;
+    height: 50px;
+    margin:0 auto;
+}
+
+
+
+/*================================================
+            END
+================================================*/
