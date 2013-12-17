@@ -5,6 +5,8 @@ body{
     font-family: Arial;
     margin:0; padding:0;
     font-family:"akzidenz", "sans-serif";
+    overflow: hidden;
+
 }
 
 @font-face {
@@ -61,10 +63,11 @@ body{
 }
 
 .swiper-slide {
-    z-index:1;
+  z-index:1;
     padding:0;
     -webkit-overflow-scrolling:touch;
     overflow:auto;
+
 }
 
 /* Pagination */
@@ -77,7 +80,7 @@ body{
 }
 
 .swiper-container, .swiper-slide {
- height: 600PX;
+   height: 568px;
 }
 
 .swiper-pagination-switch {
