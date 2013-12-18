@@ -34,7 +34,7 @@
 			<div class="swiper-slide">
 
 				<div class="traject-container">
-					<header class="traject-description" style="background-image: url(img/trajectbg.png)">
+					<header class="traject-description" style="background-image: url(img/trajectbg0.png)">
 						<h1 class="traject-name">Werk</h1>
 						<h2 class="from">Station Koog aan de Zaan</h2>
 						<h2 class="to">Metro Weesperplein</h2>
@@ -1078,7 +1078,8 @@
 		    	var trajectNaam = this.trajectNaam;
 				var van = this.van;
 				var naar = this.naar;
-				addTrajectSlide(trajectNaam, van, naar);
+				var image = this.image;
+				addTrajectSlide(trajectNaam, van, naar, image);
 		    })
 		});
 
@@ -1090,11 +1091,14 @@
 			showToevoegen();
 		});
 
-		function addTrajectSlide(trajectNaam, van, naar){	
+		function addTrajectSlide(trajectNaam, van, naar, image){	
 			var newSlide = $('.swiper-slide:eq(0)').clone();
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);
+	    	console.log(image);
+
+	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 	    	newSlide.insertAfter('.swiper-slide:last');
 			mySwiper.reInit();
 	    	

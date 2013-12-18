@@ -43,17 +43,19 @@ $(function(){
 		var trajectNaam = $('.naam-input').val();
 		var van = $('.plaatsnaam-van input').val();
 		var naar = $('.plaatsnaam-naar input').val();
-		saveTrajectSlide(trajectNaam, van, naar);
-		addTrajectSlide(trajectNaam, van, naar);
+		var image = $('.selected-image').val();
+		saveTrajectSlide(trajectNaam, van, naar, image);
+		addTrajectSlide(trajectNaam, van, naar, image);
 		mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
 		hideToevoegen();
 	}
 
-	function saveTrajectSlide(trajectNaam, van, naar){
+	function saveTrajectSlide(trajectNaam, van, naar, image){
 		trajecten.push({
 			trajectNaam : trajectNaam,
 			van : van,
-			naar: naar
+			naar: naar,
+			image : image
 		});
 		storage.set('trajecten', trajecten);
 	}
