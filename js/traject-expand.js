@@ -12,7 +12,7 @@ $(function(){
 			$li.removeClass('is-selected');
 			$li.find('.transport').slideUp();
 			$li.find('.traject-short-icons').fadeIn();
-			//$li.find('.iconsprite--collapse').fadeTo(400, 0);
+			$li.find('.iconsprite--collapse').fadeTo(400, 0);
 
 			
 		}else{
@@ -23,7 +23,7 @@ $(function(){
 					$(this).removeClass('is-selected');
 					$(this).find('.transport').slideUp();
 					$(this).find('.traject-short-icons').fadeIn();
-					//$(this).find('.iconsprite--collapse').fadeTo(400, 0);
+					$(this).find('.iconsprite--collapse').fadeTo(400, 0);
 
 
 				}
@@ -31,7 +31,7 @@ $(function(){
 
 			$li.addClass('is-selected');
 			$li.find('.transport').slideDown();
-			//$li.find('.iconsprite--collapse').fadeTo(400, 1);
+			$li.find('.iconsprite--collapse').fadeTo(400, 1);
 			$li.find('.traject-short-icons').fadeOut();
 
 
