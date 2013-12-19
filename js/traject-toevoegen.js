@@ -58,6 +58,8 @@ $(function(){
 
 		showToevoegen();
 		editMode = true;
+		$('h1.titel-edit').show();
+		$('h1.titel-toevoegen').hide();
 		$('.button-finish').hide();
 		$('.button-edit').show();
 		$('.naam-input').val(naam);
@@ -127,7 +129,8 @@ $(function(){
 		$('.button-edit').hide();
 		$('.button-finish').show();
 		$('.button-choose').hide();
-
+		$('h1.titel-edit').hide();
+		$('h1.titel-toevoegen').show();
 		$('.toevoegen').height($(window).height());
 		$('.toevoegen .button-cancel').show();
 		$('.toevoegen .button-back').hide();
