@@ -231,6 +231,7 @@
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="js/plaatsnamen.js"></script>
+	<script src="js/fastclick.js"></script>
 	<script src="js/plaatsnamen_autocomplete.js"></script>
 	<script src="js/traject-toevoegen.js"></script>
 	<script src="js/jquery.storageapi.js"></script>
@@ -271,6 +272,7 @@
 		//storage.removeAll();
 		
 		$(function(){
+			FastClick.attach(document.body);
 		
 			$('.swiper-container, .swiper-slide').height($(window).height());
 			
