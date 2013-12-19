@@ -39,13 +39,14 @@ body{
     font-size: 1.3em;
     width: 70%;
     float: left;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 .navigation-bar span.menu-button {
     display: block;
     width: 15%;
     padding: 0;
+    margin-top: 0.25em;
 }
 
 .navigation-bar .settings{
@@ -328,6 +329,22 @@ li.traject .traject-short {
     margin-left: 1em;
 }
 
+i.iconsprite--arrow {
+    background-image: url(../img/sprites/iconsprite@2x.png);
+    margin-top: 0.8em;
+    width: 30px;
+    height: 18px;
+    zoom: 50%;
+}
+
+.menusprite--add {
+    display:inline-block;
+    background-image: url(../img/sprites/iconsprite-menu@2x.png);
+    width:40px;
+    height:40px;
+    zoom:50%;
+}
+
 .icon-edit {
     width: 45px;
     height: 45px;
@@ -419,44 +436,8 @@ li.traject .traject-short {
     background-position:-230px 0;
 }
 
-/* Menusprite */
-.menusprite {
-    display:inline-block;
-    background-image: url(../img/sprites/iconsprite-menu.png);
-    width:20px;
-    height:20px;
-}
-
-.menusprite--settings {
-    background-position:0 0;
-}
-.menusprite--add {
-    background-position: -20px 0px;
-}
-
 /* Iconsprite */
 .iconsprite {
     display:inline-block;
     background-image: url(../img/sprites/iconsprite.png);
-}
-
-.iconsprite--arrow {
-    background-position:0 0;
-    width: 13px;
-    height: 9px;
-    margin: 0.3em;
-    }
-}
-
-/* Sprites high-res */
-@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { 
-
-    .menusprite {
-        background-image: url(../img/sprites/iconsprite-menu@2x.png);
-        background-size:40px 20px;
-    }
-
-    .iconsprite--arrow {
-        background-position:0 0;
-    }
 }
