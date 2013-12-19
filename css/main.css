@@ -239,10 +239,7 @@ li.traject .traject-short .is-selected:after {}
     margin-left: 0.5em;
 }
 
-.traject-short > .iconsprite--collapse {
-    float: right;
-    margin-top: 0.8em;
-}
+
 
 .box-left > i {
     margin: 0 auto;
@@ -344,20 +341,20 @@ li.traject .traject-short {
     background-position: -56px 0px;
 }
 
+.traject-short > .iconsprite--collapse {
+    float: right;
+    margin-top: 0.8em;
+}
+
 .traject.is-selected .traject-short .iconsprite--collapse {
-    opacity: 1;
     width: 5px;
     background-color: rgba(31,44,53,0.5);
     height: 2.55em;
     margin: 0;
     background-image: none;
-    transition: opacity .4s ease-in-out;
-   -moz-transition: opacity .4s ease-in-out;
-   -webkit-transition: opacity .4s ease-in-out;
 }
 
 .traject .traject-short .iconsprite--collapse {
-    opacity: 0;
     width: 5px;
 }
 
