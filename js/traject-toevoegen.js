@@ -79,9 +79,11 @@ $(function(){
 		var van = $('.plaatsnaam-van input').val();
 		var naar = $('.plaatsnaam-naar input').val();
 		var image = $('.selected-image').val();
+		var index = slide.attr('index');
 
 		editTrajectSlide(slide, trajectNaam, van, naar, image);
-		
+		saveEditTrajectSlide(trajectNaam, van, naar, image, index);
+
 		hideToevoegen();
 	}
 
@@ -94,6 +96,16 @@ $(function(){
 		});
 		storage.set('trajecten', trajecten);
 	}
+
+	function saveEditTrajectSlide(trajectNaam, van, naar, image, index){
+		trajecten[index].trajectNaam = trajectNaam;
+		trajecten[index].van = van;
+		trajecten[index].naar = naar;
+		trajecten[index].image = image;
+
+		storage.set('trajecten', trajecten);
+	}
+
 });
 
 	function showToevoegen(){
