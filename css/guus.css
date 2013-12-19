@@ -417,11 +417,12 @@ body{
 .traject-toevoegen h1 {
     font-weight:normal; 
     margin: 0;
-    font-size: 1.3em;
+    font-size: 22px;
     line-height: 1.7;
     display: inline-block;
     text-transform: uppercase;
     margin-left: 14px;
+    margin-top: 25px;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
