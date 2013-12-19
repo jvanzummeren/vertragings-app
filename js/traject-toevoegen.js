@@ -20,6 +20,11 @@ $(function(){
 		trajectToevoegen();
 	});
 
+	$('.traject-toevoegen-update button').click(function(){
+		trajectUpdate();
+	});
+
+
 	$('.traject-toevoegen-meldingen').click(function(){
 		alert("Toevoegen van melding bij opvallende vertraging, niet in het prototype geimplementeerd.");
 	});
@@ -27,6 +32,24 @@ $(function(){
 
 	$('.traject-toevoegen-customimage .block2').click(function(){
 		alert("Hier kun je een eigen afbeeldingen selecteren uit de filmrol. Niet in het prototype geimplementeerd.");
+	});
+
+	$( document ).on( "click", ".traject-description", function() {
+		var container = $(this).closest('.swiper-slide');
+
+		var naam = container.find('.traject-name').html();
+		var van = container.find('.from').html();
+		var naar = container.find('.to').html();
+		var image = $(this).attr('image');
+		$('.custom-images li').eq(image).click();
+
+		showToevoegen();
+
+		$('.naam-input').val(naam);
+		$('.plaatsnaam-van input').val(van);
+		$('.plaatsnaam-naar input').val(naar);
+
+		
 	})
 
 	$('.custom-images li').each(function(index, value){
@@ -71,6 +94,7 @@ $(function(){
 		var trajectNaam = $('.naam-input').val("");
 		var van = $('.plaatsnaam-van input').val("");
 		var naar = $('.plaatsnaam-naar input').val("");
+
 		$('.toevoegen').css('top', '100%');
 		$('.toevoegen').show();
 

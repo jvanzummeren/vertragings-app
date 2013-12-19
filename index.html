@@ -291,7 +291,7 @@
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);
 	    	console.log(image);
-
+	    	newSlide.find('.traject-description').attr('image', image);
 	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 	    	newSlide.appendTo('.swiper-wrapper');
 			mySwiper.reInit();
