@@ -35,7 +35,7 @@ body{
 
 .navigation-bar h1{
     font-weight:normal; 
-    margin: 0;
+    margin: 0 0 0 2em;
     font-size: 1.3em;
     width: 70%;
     float: left;
@@ -54,7 +54,7 @@ body{
 }
 
 .navigation-bar .add{
-    float: left;
+    float: right;
 }
 
 .swiper-container {
