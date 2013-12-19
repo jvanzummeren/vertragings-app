@@ -121,14 +121,15 @@
                       <section class="traject-toevoegen-customimage">
                         <section class="custom-images">
                             <ul>
-                              <li class="selected"><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
-                              <li><img src="" alt="" class="thumbs"></li>
+                             
+                              <li class="selected"><img src="img/foto/thumbs/0.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/1.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/2.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/3.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/4.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/5.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/6.png" alt="" class="thumbs" width="65"></li>
+                              <li><img src="img/foto/thumbs/7.png" alt="" class="thumbs" width="65"></li>
                             </ul>
                             <input type="hidden" class="selected-image" value="0"/>
                         </section>
@@ -324,14 +325,14 @@
 			var newSlide = $($('#traject-slide-template').html());
 			
 			addDummyData(newSlide);
-			if(index == undefined) index = trajecten.length;
+			if(index == undefined) index = trajecten.length-1;
 			
 			newSlide.attr('index', index);
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);
 	    	newSlide.find('.traject-description').attr('image', image);
-	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
+	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/foto/" + image + ".png)");
 	    	newSlide.appendTo('.swiper-wrapper');
 			mySwiper.reInit();
 	    	
@@ -342,7 +343,7 @@
 	    	slide.find('.from').html(van);
 	    	slide.find('.to').html(naar);
 	    	slide.find('.traject-description').attr('image', image);
-	    	slide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
+	    	slide.find('.traject-description').attr("style", "background-image: url(img/foto/" + image + ".png)");
 		}
 
 		function addDummyData($slide){

@@ -82,7 +82,15 @@ $(function(){
 		var van = $('.plaatsnaam-van input').val();
 		var naar = $('.plaatsnaam-naar input').val();
 		var image = $('.selected-image').val();
-		saveTrajectSlide(trajectNaam, van, naar, image);
+
+		trajecten.push({
+			trajectNaam : trajectNaam,
+			van : van,
+			naar: naar,
+			image : image
+		});
+
+		saveTrajectSlide();
 		addTrajectSlide(trajectNaam, van, naar, image);
 		mySwiper.swipeTo($('.swiper-slide').size()-1, 500, function(){});
 		hideToevoegen();
@@ -101,17 +109,12 @@ $(function(){
 		hideToevoegen();
 	}
 
-	function saveTrajectSlide(trajectNaam, van, naar, image){
-		trajecten.push({
-			trajectNaam : trajectNaam,
-			van : van,
-			naar: naar,
-			image : image
-		});
+	function saveTrajectSlide(){
 		storage.set('trajecten', trajecten);
 	}
 
 	function saveEditTrajectSlide(trajectNaam, van, naar, image, index){
+
 		trajecten[index].trajectNaam = trajectNaam;
 		trajecten[index].van = van;
 		trajecten[index].naar = naar;
