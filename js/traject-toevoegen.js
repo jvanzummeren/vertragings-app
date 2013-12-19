@@ -1,3 +1,5 @@
+var editSlide;
+
 $(function(){
 	$('.traject-toevoegen-nextstep button').click(function(){
 		$('.first-step').hide();
@@ -20,6 +22,11 @@ $(function(){
 		trajectToevoegen();
 	});
 
+	$('.traject-toevoegen-edit button').click(function(){
+		trajectEdit(editSlide);
+	});
+
+
 	$('.traject-toevoegen-meldingen').click(function(){
 		alert("Toevoegen van melding bij opvallende vertraging, niet in het prototype geimplementeerd.");
 	});
@@ -27,6 +34,25 @@ $(function(){
 
 	$('.traject-toevoegen-customimage .block2').click(function(){
 		alert("Hier kun je een eigen afbeeldingen selecteren uit de filmrol. Niet in het prototype geimplementeerd.");
+	});
+
+	$( document ).on( "click", ".traject-description", function() {
+		var container = $(this).closest('.swiper-slide');
+		editSlide = container;
+		var naam = container.find('.traject-name').html();
+		var van = container.find('.from').html();
+		var naar = container.find('.to').html();
+		var image = $(this).attr('image');
+		$('.custom-images li').eq(image).click();
+
+		showToevoegen();
+		$('.traject-toevoegen-finish').hide();
+		$('.traject-toevoegen-edit').show();
+		$('.naam-input').val(naam);
+		$('.plaatsnaam-van input').val(van);
+		$('.plaatsnaam-naar input').val(naar);
+
+		
 	})
 
 	$('.custom-images li').each(function(index, value){
@@ -50,6 +76,17 @@ $(function(){
 		hideToevoegen();
 	}
 
+	function trajectEdit(slide){
+		var trajectNaam = $('.naam-input').val();
+		var van = $('.plaatsnaam-van input').val();
+		var naar = $('.plaatsnaam-naar input').val();
+		var image = $('.selected-image').val();
+
+		editTrajectSlide(slide, trajectNaam, van, naar, image);
+		
+		hideToevoegen();
+	}
+
 	function saveTrajectSlide(trajectNaam, van, naar, image){
 		trajecten.push({
 			trajectNaam : trajectNaam,
@@ -63,7 +100,10 @@ $(function(){
 
 	function showToevoegen(){
 		$('.first-step').show();
-		$('.second-step').hide();	
+		$('.second-step').hide();
+		$('.traject-toevoegen-finish').show();
+		$('.traject-toevoegen-edit').hide();
+
 		$('.toevoegen').height($(window).height());
 		$('.toevoegen .button-cancel').show();
 		$('.toevoegen .button-back').hide();
@@ -71,6 +111,7 @@ $(function(){
 		var trajectNaam = $('.naam-input').val("");
 		var van = $('.plaatsnaam-van input').val("");
 		var naar = $('.plaatsnaam-naar input').val("");
+
 		$('.toevoegen').css('top', '100%');
 		$('.toevoegen').show();
 

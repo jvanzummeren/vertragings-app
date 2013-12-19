@@ -74,7 +74,7 @@ body{
     padding-top:10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 88px;
+    top: 138px;
     z-index: 0;
     width:100%;
     margin-top:20px; 
@@ -87,8 +87,8 @@ body{
 .plaatsnaam label{
     display: inline-block;
     width:18%;
-    margin-left:2%;
-    margin-right:2%;
+    margin-left:14px;
+    margin-right:14px;
     font-size: 20px;
 }
 
@@ -217,7 +217,7 @@ body{
 .traject-toevoegen-meldingen span {
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 2%;
+    margin-left: 14px;
 }
 
 .traject-toevoegen-nextstep {
@@ -388,7 +388,7 @@ body{
 
 .toevoegen{
     position: absolute;
-    background:#50bcb5;
+    background:#b8ddd5;
     top:0;
     left: 0;
     display: none;
@@ -411,18 +411,18 @@ body{
     left:0;
     right:0;
     line-height:44px;
-   opacity: 1;    
+    opacity: 1;    
 }
 
-.navigation-bar-toevoegen h1 {
+.traject-toevoegen h1 {
     font-weight:normal; 
-   margin: 0;
-    font-size: 1.3em;
-    width: 50%;
+    margin: 0;
+    font-size: 22px;
     line-height: 1.7;
     display: inline-block;
-    text-align: center;
     text-transform: uppercase;
+    margin-left: 14px;
+    margin-top: 25px;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
@@ -447,6 +447,8 @@ body{
     font-style: normal;
 }
 
+
+.traject-toevoegen-edit{display: none;}
 
 
 /*================================================

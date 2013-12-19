@@ -55,16 +55,18 @@
 		  	<span class="button-cancel">
 				<i class="icon-cancel">Annuleer</i>
 			</span>
-		    <h1>toevoegen</h1>  
 		  </header>
 
 		  <section class="first-step">
-		    <div class="overlay"></div>
+		    <div class="overlay"></div> 
 		    <section class="traject-toevoegen">
+		      <h1>WELK TRAJECT WIL JE TOEVOEGEN?</h1>
 		      <div class="plaatsnaam plaatsnaam-van">
-		        <label for="tags">VAN: </label>
-		        <input class="plaatsnaam-input">
-		        <a href="#">OK</a>
+		      	<div class="plaatsnaam-van-input">
+		        	<label for="tags">VAN: </label>
+		        	<input class="plaatsnaam-input">
+		        	<a href="#">OK</a>
+		    	</div>
 		      </div>
 
 		      <div class="plaatsnaam plaatsnaam-naar">
@@ -127,6 +129,10 @@
 		    <section class="traject-toevoegen-finish">
 		      <button class="traject-toevoegen-button">VOEG TRAJECT TOE</button>
 		    </section>
+		    <section class="traject-toevoegen-edit">
+		      <button class="traject-toevoegen-button">AANPASSEN</button>
+		    </section>
+
 
 		  </section>
 	</section>
@@ -288,12 +294,19 @@
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);
-	    	console.log(image);
-
+	    	newSlide.find('.traject-description').attr('image', image);
 	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 	    	newSlide.appendTo('.swiper-wrapper');
 			mySwiper.reInit();
 	    	
+		}
+
+		function editTrajectSlide(slide, trajectNaam, van, naar, image){
+	    	slide.find('.traject-name').html(trajectNaam);
+	    	slide.find('.from').html(van);
+	    	slide.find('.to').html(naar);
+	    	slide.find('.traject-description').attr('image', image);
+	    	slide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 		}
 
 		function addDummyData($slide){
