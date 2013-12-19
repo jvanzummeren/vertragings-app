@@ -74,7 +74,7 @@ body{
     padding-top:10px;
     padding-bottom: 10px;
     position: absolute;
-    top: 88px;
+    top: 138px;
     z-index: 0;
     width:100%;
     margin-top:20px; 
@@ -388,7 +388,7 @@ body{
 
 .toevoegen{
     position: absolute;
-    background:#50bcb5;
+    background:#b8ddd5;
     top:0;
     left: 0;
     display: none;
