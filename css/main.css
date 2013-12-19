@@ -120,6 +120,7 @@ body{
     color:#fff;
     height: 4em;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    background-size: 100%;
 }
 
 .traject-description div {
@@ -330,8 +331,8 @@ li.traject .traject-short {
     zoom: 50%;
     display: block;
     float: right;
-    margin-top: 0.4em;
-    margin-right: 0.5em;
+    margin-top: -0.3em;
+    margin-right: 0.8em;
 }
 
 .iconsprite-pt {
