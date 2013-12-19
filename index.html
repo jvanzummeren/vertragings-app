@@ -156,7 +156,7 @@
 							<i class="iconsprite iconsprite--collapse"></i>
 							<span class="delay-time"></span>
 						</div>
-						<div class="transport">
+						<div class="transport" icon="iconsprite--short-subway">
 							<div class="box-left">
 								<span class="time-added">op tijd</span>
 								<i class="iconsprite-pt iconsprite--bus"></i>
@@ -170,7 +170,20 @@
 							</div>
 						</div>
 					
-						<div class="transport">
+						<div class="transport" icon="iconsprite--short-tram">
+							<div class="box-left">
+								<span class="time-added">op tijd</span>
+								<i class="iconsprite-pt iconsprite--tram"></i>
+								<span class="time-arrival arrival-delay">12:50</span>
+							</div>
+							<div class="box-right">
+								<div>
+									<span class="traject-location">Metro Weesperplein</span>
+									<span class="additional-information">metrohalte</span>
+								</div>
+							</div>
+						</div>
+						<div class="transport" icon="iconsprite--short-subway">
 							<div class="box-left">
 								<span class="time-added">op tijd</span>
 								<i class="iconsprite-pt iconsprite--subway"></i>
@@ -183,20 +196,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="transport">
-							<div class="box-left">
-								<span class="time-added">op tijd</span>
-								<i class="iconsprite-pt iconsprite--subway"></i>
-								<span class="time-arrival arrival-delay">12:50</span>
-							</div>
-							<div class="box-right">
-								<div>
-									<span class="traject-location">Metro Weesperplein</span>
-									<span class="additional-information">metrohalte</span>
-								</div>
-							</div>
-						</div>
-						<div class="transport">
+						<div class="transport" icon="iconsprite--short-train">
 							<div class="box-left">
 								<span class="time-added">op tijd</span>
 								<i class="iconsprite-pt iconsprite--train"></i>
@@ -379,6 +379,7 @@
 					var transports = $(this).find('.transport');
 
 						if(isDelayed){
+
 							//$(this).addClass("delayed");
 							var aantalVervoersmiddelen;
 							if(vertraging < 5){
@@ -408,6 +409,8 @@
 				
 								var transport = transports.eq(random)
 									transport.addClass("delayed");
+								var icon = transport.attr('icon');
+								$(this).find("."+ icon).show();
 								
 								if(aantalVervoersmiddelen == 1){
 									transport.find('.time-added').html("+"+vertraging + " MIN");
