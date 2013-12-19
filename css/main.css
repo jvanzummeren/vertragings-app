@@ -119,9 +119,6 @@ body{
 
 /* Traject top */
 
-
-
-
 .traject-description {
     padding: 1em 2em;
     text-transform: uppercase;
@@ -368,10 +365,10 @@ li.traject .traject-short {
     background-position:0 -70px;
 }
 .iconsprite--tram {
-    background-position:-90px -70px;
+    background-position:-160px -70px;
 }
 .iconsprite--subway {
-    background-position:-160px -70px;
+    background-position: -87px -70px;
 }
 .iconsprite--bus {
     background-position:-230px -70px;
@@ -381,10 +378,10 @@ li.traject .traject-short {
     background-position:0 0;
 }
 .delayed .iconsprite--tram {
-    background-position:-90px 0;
+    background-position:-160px 0;
 }
 .delayed  .iconsprite--subway {
-    background-position:-160px 0;
+    background-position:-90px 0;
 }
 .delayed  .iconsprite--bus {
     background-position:-230px 0;
