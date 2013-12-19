@@ -1,7 +1,7 @@
 $(function(){
 
 
-	$( document ).on( "click", ".traject-description .icon-switch", function() {
+	$( document ).on( "click", ".icon-switch, .from, .to", function() {
 		var $container =  $(this).closest(".traject-container");
 		var $from = $container.find('.from');
 		var $to = $container.find('.to');
