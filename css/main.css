@@ -133,7 +133,7 @@ body{
 
 .traject-description h1{
     font-weight: normal;
-    font-size: 1.25em;
+    font-size: 1.3em;
     margin: 0;
 }
 
@@ -183,6 +183,11 @@ li.traject.is-selected .traject-short:after {
     border-bottom: 1px solid #C9C9C9;
 }
 .arrival-delay {}
+.delay-time {
+    float: right;
+    margin-top: 0.8em;
+    font-size: 0.9em;
+}
 .transport.delayed .time-start {}
 .transport.delayed .time-end {}
 .transport.delayed .transport {}
@@ -218,16 +223,16 @@ li.traject .traject-short .is-selected {}
 li.traject .traject-short .is-selected:after {}
 .traject-short-time {
     float: left;
-    margin-top: 0.4em;
+    margin-top: 0.7em;
     margin-left: 1em;
-    font-size: 1.3em;
     color: #4d4c4b;
 }
 
 .traject-short > .iconsprite--collapse {
     float: right;
-    margin-right: 1em;
+    margin-right: 0.5em;
     margin-top: 0.8em;
+    margin-left: 0.5em;
 }
 
 .box-left > i {
@@ -238,9 +243,11 @@ li.traject .traject-short .is-selected:after {}
 
 .time-end.late {
     color: #d67470;
+    float: left;
 }
 .traject-short-time i {
-    margin: 0 0.1em;
+    margin: 0.4em 0.3em 0 0.3em;
+    float: left;
 }
 li.traject {
     display: block;
@@ -252,8 +259,11 @@ li.traject > div {
 
 li.traject .traject-short {
     height: 2.75em;
+    font-size: 1.05em;
 }
-.time-start {}
+.time-start {
+    float: left;
+}
 .time-end {}
 .transport {
     display:none;
@@ -304,11 +314,11 @@ li.traject .traject-short {
 }
 
 .traject .traject-short .iconsprite--collapse {
-    display:none;
+    opacity: 0;
 }
 
 .traject.is-selected .traject-short .iconsprite--collapse {
-    display:block;
+    opacity: 1;
 }
 
 .iconsprite--train {
