@@ -491,6 +491,15 @@ body{
 
 .toevoegen .navigation-bar-toevoegen .button-choose {
     display: none;
+    width: 25%;
+    float: right;
+    text-align: right;
+    margin-right:5%;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-choose .icon-choose {
+    font-size: 17px;
+    font-style: normal;
 }
 
 
