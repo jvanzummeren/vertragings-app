@@ -46,7 +46,7 @@ $(function(){
 		alert("Hier kun je een eigen afbeeldingen selecteren uit de filmrol. Niet in het prototype geimplementeerd.");
 	});
 
-	$( document ).on( "click", ".traject-description", function() {
+	$( document ).on( "click", ".traject-description .icon-edit", function() {
 
 		var container = $(this).closest('.swiper-slide');
 		editSlide = container;
