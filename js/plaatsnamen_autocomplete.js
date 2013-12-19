@@ -15,7 +15,7 @@
     }).off('blur');
      
 
-      $(".plaatsnaam-van-input input").data("ui-autocomplete")._renderItem = renderItemFunction
+      $(".plaatsnaam-van input").data("ui-autocomplete")._renderItem = renderItemFunction
       $(".plaatsnaam-naar input").data("ui-autocomplete")._renderItem = renderItemFunction
 
 
