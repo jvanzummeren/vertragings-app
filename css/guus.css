@@ -252,28 +252,19 @@ body{
     text-transform: uppercase;
 }
 
-/*======== WEER VERWIJDEREN ========*/
-.first-step {
-    display:block;
-}
-
-.second-step {
-    display: none;
-}
-/*==================================*/
-
 .traject-toevoegen-title {
     margin-top: 44px;
-    background:#f2ecec;
+    background:#fff;
     padding:10px 0px 10px 0px;
     position: relative;
+    border-bottom: 1px solid #8b8b8b;
 }
 
 .traject-toevoegen-title label {
     display: inline-block;
     width:18%;
-    margin-left:2%;
-    margin-right:2%;
+    margin-left:5%;
+    margin-right:5%;
     font-size: 20px;
 }
 
@@ -295,21 +286,36 @@ body{
 }
 
 .traject-toevoegen-customimage .block1 {
-    margin-top: 44px;
     padding-top:10px;
     padding-bottom:10px;
-    background: #f2ecec;
+    background: #fff;
+    border-bottom:1px solid #677a76;
 }
 
 .traject-toevoegen-customimage span {
-    margin-left:2%;
-    margin-right: 2%;
+    margin-left:5%;
+    margin-right:5%;
     font-size:20px;
 }
 
+.afbeelding-toevoegen {
+    position: relative;
+}
+
+.icon-arrow {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background: url('../img/traject-toevoegen/icon-arrow.png');
+    background-size: 100%;
+    top:8px;
+    right:5%; 
+}
+
 .traject-toevoegen-customimage .custom-images {
-    padding-left:2%;
-    margin-top: 10px;
+    padding-left:5%;
+    margin-top: 20px;
+    display: block;
 }
 
 .traject-toevoegen-customimage ul {
@@ -320,11 +326,11 @@ body{
 .traject-toevoegen-customimage ul li {
     width: 65px;
     height: 65px;
-    margin-left:9px;
+    margin-left:3px;
     display: inline-block;
     background: #cecece;
     opacity: 0.5;
-    border:1px solid #f2ecec;
+    border:1px solid #fff;
     position: relative;
 }
 
@@ -381,7 +387,16 @@ body{
     margin-top: 10px;
     padding-top:10px;
     padding-bottom:10px;
-    background: #f2ecec;
+    background: #fff;
+    position: relative;
+}
+
+.traject-toevoegen-customimage .block2 span {
+    margin-left: 0px;
+}
+
+.traject-toevoegen-customimage .block2 span .icon-arrow {
+    top:17px;
 }
 
 .traject-toevoegen-finish {
@@ -447,7 +462,7 @@ body{
     width: 55px;
     height: 21px;
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-cancel {
@@ -455,7 +470,18 @@ body{
 }
 
 .toevoegen .navigation-bar-toevoegen .button-cancel .icon-cancel {
-   margin-left: 2%;
+   margin-left: 5%;
+    font-size: 17px;
+    font-style: normal;
+}
+.toevoegen .navigation-bar-toevoegen .button-finish {
+    width: 25%;
+    float: right;
+    text-align: right;
+    margin-right:5%;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-finish .icon-finish {
     font-size: 17px;
     font-style: normal;
 }
