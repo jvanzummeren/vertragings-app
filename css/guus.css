@@ -70,7 +70,7 @@ body{
     
 }
 .plaatsnaam{
-    background:#f2ecec;
+    background:#fff;
     padding-top:10px;
     padding-bottom: 10px;
     position: absolute;
@@ -147,14 +147,15 @@ body{
 .traject-toevoegen-vervoersmiddelen {
     margin-top:115px;
     width: 100%;
-    background: #f2ecec;
+    background: #fff;
 }
 
 .traject-toevoegen-vervoersmiddelen ul {
-    padding:10px 0px 10px 0px;
+    padding:12px 0px 12px 0px;
     margin:0px;
     text-align: center;
     border-bottom: 1px solid #677a76;
+    height: 60px;
 }  
 
 .traject-toevoegen-vervoersmiddelen ul li {
