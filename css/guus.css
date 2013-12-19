@@ -87,8 +87,8 @@ body{
 .plaatsnaam label{
     display: inline-block;
     width:18%;
-    margin-left:2%;
-    margin-right:2%;
+    margin-left:14px;
+    margin-right:14px;
     font-size: 20px;
 }
 
@@ -217,7 +217,7 @@ body{
 .traject-toevoegen-meldingen span {
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 2%;
+    margin-left: 14px;
 }
 
 .traject-toevoegen-nextstep {
@@ -411,18 +411,17 @@ body{
     left:0;
     right:0;
     line-height:44px;
-   opacity: 1;    
+    opacity: 1;    
 }
 
-.navigation-bar-toevoegen h1 {
+.traject-toevoegen h1 {
     font-weight:normal; 
-   margin: 0;
+    margin: 0;
     font-size: 1.3em;
-    width: 50%;
     line-height: 1.7;
     display: inline-block;
-    text-align: center;
     text-transform: uppercase;
+    margin-left: 14px;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
