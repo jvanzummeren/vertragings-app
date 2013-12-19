@@ -7,6 +7,8 @@ $(function(){
 		$('.second-step').show();
 		$('.toevoegen').scrollTop(0);
 		$('.button-finish').hide();
+		$('.button-edit').hide();
+
 		$('.button-choose').show();
 
 		$('.toevoegen .button-cancel').hide();
