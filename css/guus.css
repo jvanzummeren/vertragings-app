@@ -519,6 +519,14 @@ body{
 
 .traject-toevoegen-edit{display: none;}
 
+.titel-toevoegen {
+    display: block;
+}
+
+.titel-edit {
+    display: none;
+}
+
 
 /*================================================
             END
