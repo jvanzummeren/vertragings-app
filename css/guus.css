@@ -31,9 +31,9 @@ body{
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
-    width: 23%;
+    width: 25%;
     position: relative;
-    margin-left: 2%;
+    margin-left: 5%;
 } 
 
 .toevoegen .navigation-bar-toevoegen .button-back .icon-back {
@@ -98,8 +98,9 @@ body{
     display: inline-block;
     width:18%;
     margin-left:5%;
-    margin-right:5%;
+    margin-right:2%;
     font-size: 20px;
+    color:#444242;
 }
 
 .plaatsnaam input{
@@ -266,6 +267,7 @@ body{
     margin-left:5%;
     margin-right:5%;
     font-size: 20px;
+    color:#444242;
 }
 
 .traject-toevoegen-title input {
@@ -296,6 +298,7 @@ body{
     margin-left:5%;
     margin-right:5%;
     font-size:20px;
+    color:#444242;
 }
 
 .afbeelding-toevoegen {
@@ -314,8 +317,11 @@ body{
 
 .traject-toevoegen-customimage .custom-images {
     padding-left:5%;
-    margin-top: 20px;
+    margin-top: 17px;
     display: block;
+    background: #fff;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 .traject-toevoegen-customimage ul {
@@ -384,15 +390,11 @@ body{
 }
 
 .traject-toevoegen-customimage .block2 {
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top:10px;
     padding-bottom:10px;
     background: #fff;
     position: relative;
-}
-
-.traject-toevoegen-customimage .block2 span {
-    margin-left: 0px;
 }
 
 .traject-toevoegen-customimage .block2 span .icon-arrow {
