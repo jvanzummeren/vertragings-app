@@ -282,7 +282,14 @@
 		var storage = $.localStorage;
 		var trajecten = storage.get('trajecten');
 
-		if(!trajecten) trajecten = [];
+		if(!trajecten){ 
+			trajecten = [];
+			$('.homescreen').show();
+		}
+
+
+
+
 
 		//storage.removeAll();
 		
@@ -318,7 +325,7 @@
 			hideToevoegen();
 		});
 
-		$(".add").click(function(){	
+		$(".add, .homescreen").click(function(){	
 			showToevoegen();
 		});
 
