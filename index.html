@@ -134,84 +134,79 @@
 	<script type="text/template" id="traject-slide-template">
 		<div class="swiper-slide">
 
-					
-
-
 			<div class="traject-container">
-								<header class="traject-description" style="background-image: url(img/trajectbg0.png)">
-									<h1 class="traject-name">Werk</h1>
-									<h2 class="from">Station Koog aan de Zaan</h2>
-									<h2 class="to">Metro Weesperplein</h2>
-								</header>
-								<ul>
-									<li class="traject">
-										<div class="traject-short">
-											<div class="traject-short-time">
-												<span class="time-start">12:00</span>
-												<i class="iconsprite iconsprite--arrow"></i>
-												<span class="time-end">12:50</span>
-												<span class="delay-time"></span>
-											</div>
-											<i class="iconsprite iconsprite--collapse">C</i>
-										</div>
-										<div class="transport">
-											<div class="box-left">
-												<span class="time-added">op tijd</span>
-												<i class="iconsprite-pt iconsprite--bus"></i>
-												<span class="time-arrival">12:50</span>
-											</div>
-											<div class="box-right">
-												<div>
-													<span class="traject-location">Bushalte Dorpsstraat</span>
-													<span class="additional-information">Halte 23</span>
-												</div>
-											</div>
-										</div>
-									
-										<div class="transport">
-											<div class="box-left">
-												<span class="time-added">op tijd</span>
-												<i class="iconsprite-pt iconsprite--subway"></i>
-												<span class="time-arrival arrival-delay">12:50</span>
-											</div>
-											<div class="box-right">
-												<div>
-													<span class="traject-location">Metro Weesperplein</span>
-													<span class="additional-information">metrohalte</span>
-												</div>
-											</div>
-										</div>
-										<div class="transport">
-											<div class="box-left">
-												<span class="time-added">op tijd</span>
-												<i class="iconsprite-pt iconsprite--subway"></i>
-												<span class="time-arrival arrival-delay">12:50</span>
-											</div>
-											<div class="box-right">
-												<div>
-													<span class="traject-location">Metro Weesperplein</span>
-													<span class="additional-information">metrohalte</span>
-												</div>
-											</div>
-										</div>
-										<div class="transport">
-											<div class="box-left">
-												<span class="time-added">op tijd</span>
-												<i class="iconsprite-pt iconsprite--train"></i>
-												<span class="time-arrival">12:50</span>
-											</div>
-											<div class="box-right">
-												<div>
-													<span class="traject-location">Station Zaandam</span>
-													<span class="additional-information">Spoor 7a</span>
-												</div>
-											</div>
-										</div>
-									</li>
-
-									
-								</ul>
+				<header class="traject-description" style="background-image: url(img/trajectbg0.png)">
+					<h1 class="traject-name">Werk</h1>
+					<h2 class="from">Station Koog aan de Zaan</h2>
+					<h2 class="to">Metro Weesperplein</h2>
+				</header>
+				<ul>
+					<li class="traject">
+						<div class="traject-short">
+							<div class="traject-short-time">
+								<span class="time-start">12:00</span>
+								<i class="iconsprite iconsprite--arrow"></i>
+								<span class="time-end">12:50</span>
+								<span class="delay-time"></span>
 							</div>
+							<i class="iconsprite iconsprite--collapse">C</i>
+						</div>
+						<div class="transport">
+							<div class="box-left">
+								<span class="time-added">op tijd</span>
+								<i class="iconsprite-pt iconsprite--bus"></i>
+								<span class="time-arrival">12:50</span>
+							</div>
+							<div class="box-right">
+								<div>
+									<span class="traject-location">Bushalte Dorpsstraat</span>
+									<span class="additional-information">Halte 23</span>
+								</div>
+							</div>
+						</div>
+					
+						<div class="transport">
+							<div class="box-left">
+								<span class="time-added">op tijd</span>
+								<i class="iconsprite-pt iconsprite--subway"></i>
+								<span class="time-arrival arrival-delay">12:50</span>
+							</div>
+							<div class="box-right">
+								<div>
+									<span class="traject-location">Metro Weesperplein</span>
+									<span class="additional-information">metrohalte</span>
+								</div>
+							</div>
+						</div>
+						<div class="transport">
+							<div class="box-left">
+								<span class="time-added">op tijd</span>
+								<i class="iconsprite-pt iconsprite--subway"></i>
+								<span class="time-arrival arrival-delay">12:50</span>
+							</div>
+							<div class="box-right">
+								<div>
+									<span class="traject-location">Metro Weesperplein</span>
+									<span class="additional-information">metrohalte</span>
+								</div>
+							</div>
+						</div>
+						<div class="transport">
+							<div class="box-left">
+								<span class="time-added">op tijd</span>
+								<i class="iconsprite-pt iconsprite--train"></i>
+								<span class="time-arrival">12:50</span>
+							</div>
+							<div class="box-right">
+								<div>
+									<span class="traject-location">Station Zaandam</span>
+									<span class="additional-information">Spoor 7a</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</script>
 
@@ -225,7 +220,6 @@
 	<script src="js/traject-expand.js"></script>
 	<script>
 
-
 	function currentTimePlus(minutes){
 		 var currentTime = new Date().getTime();
 		 var minutesToAdd = minutes;
@@ -234,7 +228,6 @@
 
 		var newTimeDate = new Date(currentTime);
 		return newTimeDate;
-
 	}
 
 	function formatDateAsTime(date){
@@ -248,10 +241,6 @@
 		return hour + ":" + minutes;
 	}
 
-	
-
-
-	
 	</script>
 	<script>
 		var randomTrajecten = ["School", "Werk", "Vriendin", "Bibliotheek", "Universiteit"];
@@ -261,9 +250,8 @@
 
 		if(!trajecten) trajecten = [];
 
-		//storage.removeAll();
+		storage.removeAll();
 		
-
 		$(function(){
 		
 			$('.swiper-container, .swiper-slide').height($(window).height());
@@ -421,7 +409,6 @@
 
 						}					
 					
-
 				}
 				
 			})
