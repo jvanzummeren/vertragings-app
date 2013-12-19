@@ -294,12 +294,19 @@
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);
-	    	console.log(image);
 	    	newSlide.find('.traject-description').attr('image', image);
 	    	newSlide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 	    	newSlide.appendTo('.swiper-wrapper');
 			mySwiper.reInit();
 	    	
+		}
+
+		function editTrajectSlide(slide, trajectNaam, van, naar, image){
+	    	slide.find('.traject-name').html(trajectNaam);
+	    	slide.find('.from').html(van);
+	    	slide.find('.to').html(naar);
+	    	slide.find('.traject-description').attr('image', image);
+	    	slide.find('.traject-description').attr("style", "background-image: url(img/trajectbg" + image + ".png)");
 		}
 
 		function addDummyData($slide){
