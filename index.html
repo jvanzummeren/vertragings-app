@@ -241,6 +241,9 @@
 	<script src="js/jquery.storageapi.js"></script>
 	<script src="js/idangerous.swiper-2.1.min.js"></script>
 	<script src="js/traject-expand.js"></script>
+	<script src="js/destination-switch.js"></script>
+	<script src="js/hovers.js"></script>
+
 	<script>
 
 	function currentTimePlus(minutes){
@@ -284,8 +287,11 @@
 		      loop:false,
 		      pagination: '.pagination',
 		      paginationClickable: true,
-		      cssWidthAndHeight : true
+		      cssWidthAndHeight : true,
+			
 		    });
+
+		    initHovers();
 		    
 		    console.log(trajecten);
 

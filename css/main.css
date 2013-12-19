@@ -162,6 +162,10 @@ li.traject:nth-child(even) {
 }
 
 /* Traject individual delayed */
+.traject-short.hover{
+    background: #ccc;
+}
+
 
 .traject-short-icons {
     float: left;
