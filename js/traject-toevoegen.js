@@ -1,4 +1,5 @@
 var editSlide;
+var editMode = false;
 
 $(function(){
 	$('.traject-toevoegen-customimage').click(function(){
@@ -16,7 +17,11 @@ $(function(){
 	$('.toevoegen .button-back, .toevoegen .button-choose').click(function(){
 		$('.first-step').show();
 		$('.second-step').hide();
-		$('.button-finish').show();
+		if(editMode){
+			$('.button-edit').show();
+		}else{
+			$('.button-finish').show();
+		}
 		$('.button-choose').hide();
 		$('.toevoegen').scrollTop(0);	
 		$('.toevoegen .button-cancel').show();
@@ -42,6 +47,7 @@ $(function(){
 	});
 
 	$( document ).on( "click", ".traject-description", function() {
+
 		var container = $(this).closest('.swiper-slide');
 		editSlide = container;
 		var naam = container.find('.traject-name').html();
@@ -51,6 +57,7 @@ $(function(){
 		$('.custom-images li').eq(image).click();
 
 		showToevoegen();
+		editMode = true;
 		$('.button-finish').hide();
 		$('.button-edit').show();
 		$('.naam-input').val(naam);
@@ -114,6 +121,7 @@ $(function(){
 });
 
 	function showToevoegen(){
+		editMode = false;
 		$('.first-step').show();
 		$('.second-step').hide();
 		$('.button-edit').hide();
