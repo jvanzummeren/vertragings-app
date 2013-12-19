@@ -40,7 +40,7 @@ body{
     font-size: 17px;
     font-style: normal;
     padding-left: 15px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back .icon-back:before {
@@ -81,14 +81,24 @@ body{
 }
 
 .plaatsnaam-naar{
-    top:176px;
+    top:186px;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.plaatsnaam-line {
+    width: 95%;
+    height: 1px;
+    border-bottom: 1px solid #c4c4c4;
+    position: absolute;
+    top: 204px;
+    left: 5%;
 }
 
 .plaatsnaam label{
     display: inline-block;
     width:18%;
-    margin-left:14px;
-    margin-right:14px;
+    margin-left:5%;
+    margin-right:5%;
     font-size: 20px;
 }
 
@@ -113,6 +123,11 @@ body{
     text-align: center;
 }
 
+.plaatsnaam-van-input {
+    border-bottom: 1px solid #c4c4c4;
+    width: 70%;
+}
+
 .ui-menu .ui-menu-item a{ 
     border-radius: 0; 
     height:44px;
@@ -130,7 +145,7 @@ body{
 }
 
 .traject-toevoegen-vervoersmiddelen {
-    margin-top:220px;
+    margin-top:115px;
     width: 100%;
     background: #f2ecec;
 }
@@ -139,19 +154,20 @@ body{
     padding:10px 0px 10px 0px;
     margin:0px;
     text-align: center;
+    border-bottom: 1px solid #677a76;
 }  
 
 .traject-toevoegen-vervoersmiddelen ul li {
     display:inline-block;
     position: relative;
     width: 60px;
-    height: 50px;
+    height: 60px;
     margin: 0px 5px 0px 5px;
 }
 
 .traject-toevoegen-vervoersmiddelen ul li input {
     width: 60px;
-    height: 50px;
+    height: 60px;
     cursor: pointer;
     opacity: 0;
     position: absolute;
@@ -161,7 +177,7 @@ body{
 }
 .traject-toevoegen-vervoersmiddelen ul li label {
     width: 60px;
-    height: 50px;
+    height: 60px;
     display: inline-block;
     position: absolute;
     top:0px;
@@ -206,18 +222,6 @@ body{
 .image-metro[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/metro-on.png') 0 0px no-repeat;
     background-size:100%;
-}
-
-.traject-toevoegen-meldingen {
-    background: #f2ecec;
-    margin-top: 44px;
-    padding:11px 0px 10px 0px;
-}
-
-.traject-toevoegen-meldingen span {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-left: 14px;
 }
 
 .traject-toevoegen-nextstep {
@@ -418,11 +422,11 @@ body{
     font-weight:normal; 
     margin: 0;
     font-size: 22px;
-    line-height: 1.7;
+    line-height: 1.3;
     display: inline-block;
     text-transform: uppercase;
     margin-left: 14px;
-    margin-top: 25px;
+    margin-top: 19px;
 }
 
 .toevoegen .navigation-bar-toevoegen .button-back {
