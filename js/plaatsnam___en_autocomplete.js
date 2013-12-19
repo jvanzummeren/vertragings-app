@@ -1,4 +1,4 @@
-    $(function() {
+  $(function() {
 
     $( ".plaatsnaam-input" ).autocomplete({
       source: plaatsnamenArray,
@@ -12,11 +12,14 @@
         var container = $(this).closest("div");
         removeAutoComplete(container);
       }
-    }).off('blur');
-     
+    }).off('blur').data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+      var number = Math.floor(Math.random() * 99);
+      var place = (number%2 ==0) ? "Voorbeeldstraat 1" : "Station";
 
-      $(".plaatsnaam-van-input input").data("ui-autocomplete")._renderItem = renderItemFunction
-      $(".plaatsnaam-naar input").data("ui-autocomplete")._renderItem = renderItemFunction
+      return $( "<li>" )
+        .append( "<a>" + item.label + "<span>"+place+"</span></a>" )
+        .appendTo( ul );
+    };
 
 
 
@@ -71,12 +74,3 @@
       $(this).css('z-index', 0);
     }});
   }
-
-  function renderItemFunction( ul, item ) {
-          var number = Math.floor(Math.random() * 99);
-          var place = (number%2 ==0) ? "Voorbeeldstraat 1" : "Station";
-
-          return $( "<li>" )
-            .append( "<a>" + item.label + "<span>"+place+"</span></a>" )
-            .appendTo( ul );
- };
