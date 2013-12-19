@@ -331,6 +331,17 @@ li.traject .traject-short {
     margin-left: 1em;
 }
 
+.icon-edit {
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/sprites/editicon.png);
+    zoom: 50%;
+    display: block;
+    float: right;
+    margin-top: 0.4em;
+    margin-right: 0.5em;
+}
+
 .iconsprite-pt {
     width:66px;
     height:66px;
