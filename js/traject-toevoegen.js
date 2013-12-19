@@ -1,24 +1,29 @@
 var editSlide;
 
 $(function(){
-	$('.traject-toevoegen-nextstep button').click(function(){
+	$('.traject-toevoegen-customimage').click(function(){
 		$('.first-step').hide();
 		$('.second-step').show();
 		$('.toevoegen').scrollTop(0);
+		$('.button-finish').hide();
+		$('.button-choose').show();
+
 		$('.toevoegen .button-cancel').hide();
 		$('.toevoegen .button-back').css('display', 'inline-block');
 
 	});
 
-	$('.toevoegen .button-back').click(function(){
+	$('.toevoegen .button-back, .toevoegen .button-choose').click(function(){
 		$('.first-step').show();
 		$('.second-step').hide();
+		$('.button-finish').show();
+		$('.button-choose').hide();
 		$('.toevoegen').scrollTop(0);	
 		$('.toevoegen .button-cancel').show();
 		$('.toevoegen .button-back').hide();	
 	});
 
-	$('.traject-toevoegen-finish button').click(function(){
+	$('.button-finish').click(function(){
 		trajectToevoegen();
 	});
 
@@ -113,6 +118,8 @@ $(function(){
 		$('.second-step').hide();
 		$('.traject-toevoegen-finish').show();
 		$('.traject-toevoegen-edit').hide();
+		$('.button-finish').show();
+		$('.button-choose').hide();
 
 		$('.toevoegen').height($(window).height());
 		$('.toevoegen .button-cancel').show();
