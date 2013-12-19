@@ -57,6 +57,10 @@ body{
     float: right;
 }
 
+.homescreen {
+    display: none;
+}
+
 .swiper-container {
     z-index:1;
     width:100%;
