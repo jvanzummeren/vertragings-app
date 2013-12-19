@@ -188,41 +188,49 @@ body{
 .image-bus[type=checkbox] + label {
     background: url('../img/traject-toevoegen/bus-off.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 0.5;
 }
 
 .image-bus[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/bus-on.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 1;
 }
 
 .image-trein[type=checkbox] + label {
     background: url('../img/traject-toevoegen/trein-off.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 0.5;
 }
 
 .image-trein[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/trein-on.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 1;
 }
 
 .image-tram[type=checkbox] + label {
     background: url('../img/traject-toevoegen/tram-off.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 0.5;
 }
 
 .image-tram[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/tram-on.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 1;
 }
 
 .image-metro[type=checkbox] + label {
     background: url('../img/traject-toevoegen/metro-off.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 0.5;
 }
 
 .image-metro[type=checkbox]:checked + label {
     background: url('../img/traject-toevoegen/metro-on.png') 0 0px no-repeat;
     background-size:100%;
+    opacity: 1;
 }
 
 .traject-toevoegen-nextstep {
