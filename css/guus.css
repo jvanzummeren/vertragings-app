@@ -489,6 +489,10 @@ body{
     font-style: normal;
 }
 
+.toevoegen .navigation-bar-toevoegen .button-choose {
+    display: none;
+}
+
 
 .traject-toevoegen-edit{display: none;}
 
