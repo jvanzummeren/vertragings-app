@@ -27,7 +27,7 @@ $(function(){
 		trajectToevoegen();
 	});
 
-	$('.traject-toevoegen-edit button').click(function(){
+	$('.button-edit').click(function(){
 		trajectEdit(editSlide);
 	});
 
@@ -51,8 +51,8 @@ $(function(){
 		$('.custom-images li').eq(image).click();
 
 		showToevoegen();
-		$('.traject-toevoegen-finish').hide();
-		$('.traject-toevoegen-edit').show();
+		$('.button-finish').hide();
+		$('.button-edit').show();
 		$('.naam-input').val(naam);
 		$('.plaatsnaam-van input').val(van);
 		$('.plaatsnaam-naar input').val(naar);		
@@ -116,8 +116,7 @@ $(function(){
 	function showToevoegen(){
 		$('.first-step').show();
 		$('.second-step').hide();
-		$('.traject-toevoegen-finish').show();
-		$('.traject-toevoegen-edit').hide();
+		$('.button-edit').hide();
 		$('.button-finish').show();
 		$('.button-choose').hide();
 

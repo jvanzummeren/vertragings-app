@@ -502,6 +502,20 @@ body{
     font-style: normal;
 }
 
+.toevoegen .navigation-bar-toevoegen .button-edit {
+    display: none;
+    width: 25%;
+    float: right;
+    text-align: right;
+    margin-right:5%;
+    color:#ffea00;
+}
+
+.toevoegen .navigation-bar-toevoegen .button-edit .icon-edit2 {
+    font-size: 17px;
+    font-style: normal;
+}
+
 
 .traject-toevoegen-edit{display: none;}
 
