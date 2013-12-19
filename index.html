@@ -267,16 +267,17 @@
 		      paginationClickable: true,
 		      cssWidthAndHeight : true
 		    });
+		    
+		    console.log(trajecten);
 
-		    $(trajecten).each(function(index, value){
-		    	console.log(this);
-		    	console.log(value);
-		    	var trajectNaam = this.trajectNaam;
-				var van = this.van;
-				var naar = this.naar;
-				var image = this.image;
-				addTrajectSlide(trajectNaam, van, naar, image);
-		    })
+		    for(var i=0; i < trajecten.length; i++){
+		    	var traject = trajecten[i];
+		    	var trajectNaam = traject.trajectNaam;
+				var van = traject.van;
+				var naar = traject.naar;
+				var image = traject.image;
+				addTrajectSlide(trajectNaam, van, naar, image, i);
+		    }
 		});
 
 		$('.toevoegen .button-cancel').click(function(){
@@ -287,10 +288,13 @@
 			showToevoegen();
 		});
 
-		function addTrajectSlide(trajectNaam, van, naar, image){	
+		function addTrajectSlide(trajectNaam, van, naar, image, index){	
 			var newSlide = $($('#traject-slide-template').html());
-
+			
 			addDummyData(newSlide);
+			if(index == undefined) index = trajecten.length;
+			
+			newSlide.attr('index', index);
 	    	newSlide.find('.traject-name').html(trajectNaam);
 	    	newSlide.find('.from').html(van);
 	    	newSlide.find('.to').html(naar);

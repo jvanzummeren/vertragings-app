@@ -50,9 +50,7 @@ $(function(){
 		$('.traject-toevoegen-edit').show();
 		$('.naam-input').val(naam);
 		$('.plaatsnaam-van input').val(van);
-		$('.plaatsnaam-naar input').val(naar);
-
-		
+		$('.plaatsnaam-naar input').val(naar);		
 	})
 
 	$('.custom-images li').each(function(index, value){
