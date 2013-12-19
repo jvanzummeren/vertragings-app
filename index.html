@@ -291,7 +291,7 @@
 
 
 
-		//storage.removeAll();
+		storage.removeAll();
 		
 		$(function(){
 			FastClick.attach(document.body);
@@ -331,6 +331,7 @@
 
 		function addTrajectSlide(trajectNaam, van, naar, image, index){	
 			var newSlide = $($('#traject-slide-template').html());
+			$('.homescreen').hide();
 			
 			addDummyData(newSlide);
 			if(index == undefined) index = trajecten.length-1;
