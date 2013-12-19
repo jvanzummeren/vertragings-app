@@ -120,13 +120,19 @@ body{
 /* Traject top */
 
 .traject-description {
-    padding: 1em 2em;
+    padding: 0.6em 0em;
     text-transform: uppercase;
     background: #53bbb4;
     color:#fff;
     height: 4em;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
+
+.traject-description div {
+    float: left;
+    margin-left: 0.5em;
+}
+
 
 .traject-description h1{
     font-weight: normal;
@@ -313,6 +319,17 @@ li.traject .traject-short {
 }
 
 /* Iconsprite-pt */
+
+.icon-switch {
+    width:36px;
+    height:36px;
+    background-image: url(../img/sprites/switchroutes.png);
+    zoom: 50%;
+    display: block;
+    float: left;
+    margin-top: 5em;
+    margin-left: 1em;
+}
 
 .iconsprite-pt {
     width:66px;
