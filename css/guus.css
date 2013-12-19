@@ -406,7 +406,7 @@ body{
 }
 
 .overlay{
-    background:#50bcb5;
+    background:#b8ddd5;
     position: absolute;
     width:100%;
     height:100%;
@@ -518,6 +518,14 @@ body{
 
 
 .traject-toevoegen-edit{display: none;}
+
+.titel-toevoegen {
+    display: block;
+}
+
+.titel-edit {
+    display: none;
+}
 
 
 /*================================================
